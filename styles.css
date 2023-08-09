@@ -70,11 +70,19 @@ article p {
     margin: 2rem 0;
 }
 
-
 hr {
     border: #ccc 1px solid;
     margin: 50px 10px;
 }
+/* imagen responsive */
+.responsive-image {
+    max-width: 95%;
+    height: auto;
+    margin: 20px 5px;
+}
+
+
+
 /* Estilos para el pie de página */
 footer {
     text-align: center;
@@ -84,6 +92,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: smaller;
 }
 
 
