@@ -48,7 +48,7 @@ nav ul li a {
 /* Estilos para el contenido principal */
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 2rem;
     display: flex;
     flex-flow: column wrap;
@@ -67,8 +67,14 @@ article h2 {
 article p {
     color: #555;
     text-align: justify;
+    margin: 2rem 0;
 }
 
+
+hr {
+    border: #ccc 1px solid;
+    margin: 50px 10px;
+}
 /* Estilos para el pie de página */
 footer {
     text-align: center;
@@ -79,3 +85,5 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
