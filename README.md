@@ -1,3 +1,5 @@
-# web Imaging Sciences Laboratory: Applied Research in Academic, Industrial, and Governmental Contexts
+# Communications of the ACM Special Issue
 
-https://imagelabuns.github.io/web/
+# Article: Imaging Sciences Laboratory: Applied Research in Academic, Industrial, and Governmental Contexts
+
+# Supplementary material, please visit https://imagelabuns.github.io/web/
