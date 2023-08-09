@@ -76,7 +76,7 @@ hr {
 }
 /* imagen responsive */
 .responsive-image {
-    max-width: 95%;
+    max-width: 75%;
     height: auto;
     margin: 20px 5px;
 }
