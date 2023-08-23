@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaging Sciences Laboratory: Applied Research in Academic, Industrial, and Governmental Contexts
+    </title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Enlace a archivo de estilos CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <h1>Imaging Sciences Laboratory</h1>
+    </header>
+     <!-- NAvBar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ISL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Research
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item  " aria-current="page" href="./one.html">Project one</a></li>
+                  <li><a class="dropdown-item active" href="./two.html">Project</a></li>
+                  <li><a class="dropdown-item" href="./three.html">Project</a></li>
+                  <li><a class="dropdown-item" href="./four.html">Project</a></li>
+                  <li><a class="dropdown-item" href="./five.html">Project</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     <!-- NavBar end -->
+     <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Project two</li>
+        </ol>
+      </nav>
+      
+      
+
+    <main>
+        <article>
+            <h2>Advanced nuclear anomaly detection in microscopy images</h2>
+
+            
+                    <p>
+                        Nuclear abnormalities in avian erythrocytes have been used as biomarkers of genotoxicity in several species. Anomalous shapes are usually detected in the nuclei by means of microscopy inspection. However, due to inter- and intra-observer variability, classification of these blood cell abnormalities could be problematic for replicating research. A deep learning model was developed to improve standardization in identifying the biological configurations of biological importance. This method has proven to be a fast and efficient approach that reduces the dependence on human supervision in the classification of nuclear abnormalities in avian erythrocytes, and can be adapted to be used in similar contexts with little effort.
+                    </p>
+                    <img src="../imgs/cacm_microscopy_images/graphical_abs_v1.jpg" class="responsive-image" alt="advanced nuclear anomaly detection">
+                    <p>
+                        Recently, nuclear abnormalities in avian erythrocytes have been used as biomarkers of genotoxicity in several species. Anomalous shapes are usually detected in the nuclei by means of microscopy inspection. However, due to inter- and intra-observer variability, the classification of these blood cell abnormalities could be problematic for replicating research. Deep learning, as a powerful image analysis technique, can be used in this context to improve standardization in identifying the biological configurations of medical importance. In this study, we present a standardized deep learning model for identifying and classifying abnormal shapes in erythrocyte nuclei in blood smears of the hemispheric and synanthropic Kelp Gull (Larus dominicanus). We trained two convolutional backbones (ResNet101 and ResNet50 architectures) to obtain models capable of detecting and classifying these abnormalities in blood cells. 
+                      </p>
+                      <p> 
+                      The analysis was performed at three discrimination levels of classification, with broad categories subdivided into increasingly specific subcategories (level 1: “normal”, “abnormal”, “other” / level 2: “normal”, “ENAs”, “micronucleus”, “other” / level 3: “normal”, “irregular”, “displaced”, “enucleated”, “micronucleus”, “other”). Performance was more than adequate and very similar in levels 1 and 2 (F1-score 84.6\% and 83.6\%, and accuracy 83.9\% and 82.6 \%). In level 3, performance was lower (F1-score 65.9\% and accuracy 80.8\%). It can be concluded that level 2 of analysis should be considered the most appropriate as it is more specific than level 1, with similar quality of performance.
+                      </p>
+                      <p>
+                      This method has proven to be a fast, efficient and standardized approach that reduces the dependence on human supervision in the classification of nuclear abnormalities in avian erythrocytes, and can be adapted to be used in similar contexts with little effort.
+Currently, we are working on expanding the analysis categories, improving the model's performance, and extending the analysis to other bird species.
+                    </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Imaging Sciences Laboratory: <br> Applied Research in Academic, Industrial, and Governmental Contexts.<br> All right reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

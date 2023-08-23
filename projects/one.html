@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaging Sciences Laboratory: Applied Research in Academic, Industrial, and Governmental Contexts
+    </title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Enlace a archivo de estilos CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <h1>Imaging Sciences Laboratory</h1>
+    </header>
+     <!-- NAvBar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ISL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Research
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item active " aria-current="page" href="./one.html">Project one</a></li>
+                  <li><a class="dropdown-item" href="./two.html">Project</a></li>
+                  <li><a class="dropdown-item" href="./three.html">Project</a></li>
+                  <li><a class="dropdown-item" href="./four.html">Project</a></li>
+                  <li><a class="dropdown-item" href="./five.html">Project</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     <!-- NavBar end -->
+     <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Project one</li>
+        </ol>
+      </nav>
+      
+      
+
+    <main>
+        <article>
+            <h2>New intelligent methods presumptive diagnosis in pantomographies</h2>
+            
+                
+                    <p> The dental panoramic X-ray (panoramic or orthopantomography) is the most accurate and valuable source of information to support dental clinical diagnosis. However, assisted diagnoses are costly, time consuming, and require a wide expertise not always available. This project proposes a comprehensive application that emulates the ability of a human specialist to interpret, quantify and describe different dental and oral conditions and characteristics. The underlying model was trained with several thousands of actual pantomographies and their respective expert diagnoses in natural language, embedding the image analysis and the linguistic latent spaces. </p>
+                    <img src="../imgs/negatoscopio.png" class="responsive-image" alt="negatoscopio digital">
+                    <p>
+                        The presumptive diagnoses to be generated encompass a wide range of conditions, such as missing or misaligned dental pieces, infections, irregularities in teeth and gums, impacted dental pieces with periodontal disease, cysts or tumors in the maxillofacial region, among others. The foundation of the functioning of this project consists of intelligent image analysis models trained from several thousands of panoramics diagnosed by specialists. The images were then labeled to train deep networks that would allow detecting and identifying the conditions indicated in their respective diagnoses.</p>
+
+
+<p>As mentioned, to provide proper support for image-based diagnostic decision-making, this project not only considers the training of image analysis models through deep learning but also supervised diagnoses in natural language. One of the innovative aspects of our model, then, is to correspond the linguistic model of the diagnoses with the parameters of image analysis. This is achieved through embedding techniques of the latent spaces of both models: the semantic space of diagnoses is corresponded with the latent space of the image analysis model.</p>
+
+<p>On the other hand, the work conducted with several thousands of panoramics enables the extraction of demographic parameters, which can be used to determine statistical models of different prevalences of individual and combined dental conditions. This, on one hand, grants greater precision and accuracy in the development of presumptive diagnosis, and on the other hand, enables the accumulation of valuable information for health policies.</p>
+
+<p>Currently, more than 5000 images with their respective diagnostic texts have been labeled and analyzed. This allowed for the creation of an initial effective model for automatic detection and segmentation of dental pieces by type and location, a model for numbering dental pieces according to the International Code (FDI), an automatic landmarking model for anatomical points and centroids of dental pieces, presence/absence of caries, and other conditions. The results are presented in an innovative digital negatoscope model, which facilitates professionals in identifying marked dental pieces on an approximate 3D model of the craniofacial structure (Demo: <a href="https://imaglabs.org/panto/">https://imaglabs.org/panto/</a>, Explanatory video: <a href="https://www.youtube.com/watch?v=4Kwjbcvd8Fc">https://www.youtube.com/watch?v=4Kwjbcvd8Fc</a>).</p>
+
+<p>
+Within a two-year timeframe, the expectation focuses on two groups of objectives: the consolidation of the model, and the initiation of productization through the development of a functional prototype to initiate its dissemination and commercialization. </p>
+
+<p>
+    <!-- See <a href="https://imagelabuns.github.io/web/"> https://imagelabuns.github.io/web/</a> for an expanded description of these projects.-->
+    </p>
+                
+        </article>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Imaging Sciences Laboratory: <br> Applied Research in Academic, Industrial, and Governmental Contexts.<br> All right reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -17,37 +17,36 @@ header {
 nav {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 15px;
 }
 
 
 nav ul {
     list-style: none;
-    padding: 10px;
-    margin: 3px;
+    
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 1rem;
 }
 
 nav ul li a:hover {
     color: #fff;
     background-color: rgb(12, 51, 113);
-    padding: 5px 15px;
+    
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding: 5px 15px;
+    
 }
 
 /* Estilos para el contenido principal */
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 10px auto;
     padding: 2rem;
     display: flex;
