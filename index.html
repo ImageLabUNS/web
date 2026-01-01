@@ -3,102 +3,954 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imaging Sciences Laboratory: Applied Research in Academic, Industrial, and Governmental Contexts
-    </title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a archivo de estilos CSS -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <title>Laboratorio de Ciencias de las Imágenes</title>
+    <meta name="description" content="Laboratorio de investigación en ciencias de las imágenes, inteligencia artificial y tecnología médica. Descubrí nuestros proyectos de vanguardia.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e1b4b',
+                        secondary: '#6366f1',
+                        accent: '#06b6d4',
+                        success: '#10b981',
+                        warning: '#f59e0b',
+                        danger: '#ef4444'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="header bg-primary">
-        <h1>Imaging Sciences Laboratory</h1>
-    </header>
-     <!-- NAvBar -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">ISL</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                  Research
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./projects/one.html">Health</a></li>
-                  <li><a class="dropdown-item" href="./projects/two.html">Microscopy</a></li>
-                  <li><a class="dropdown-item" href="./projects/three.html">Wildlife Monitoring</a></li>
-                  <li><a class="dropdown-item" href="./projects/four.html">Safe workplace</a></li>
-                  <li><a class="dropdown-item" href="./projects/five.html">Agricultural Data Management</a></li>
-                  
-                </ul>
-              </li>
-            </ul>
-          </div>
+<body class="font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <img src="imgs/logo.png" alt="Logo" class="w-10 h-10 rounded-lg">
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold text-primary">Laboratorio de Ciencias de las imágenes</h1>
+                        <p class="text-xs text-gray-500">Universidad Nacional del Sur - ICIC, CONICET</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-secondary font-medium transition-colors">Inicio</a>
+                    <a href="#about" class="text-gray-700 hover:text-secondary font-medium transition-colors">Institucional</a>
+                    <a href="#projects" class="text-gray-700 hover:text-secondary font-medium transition-colors">Proyectos</a>
+                    <a href="#team" class="text-gray-700 hover:text-secondary font-medium transition-colors">Equipo</a>
+                    <a href="#contact" class="text-gray-700 hover:text-secondary font-medium transition-colors">Contacto</a>
+                    <button class="bg-secondary text-white px-4 py-2 rounded-lg hover:bg-primary transition-colors font-medium">
+                        <i class="fas fa-envelope mr-2"></i>Contactanos
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-gray-700 text-xl"></i>
+                </button>
+            </div>
         </div>
-      </nav>
-     <!-- NavBar end -->
-     <!-- breadcrumb -->
-     <!-- <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Home</li>
-      </ol>
-    </nav> -->
-     <!-- breadcrumb -->
-<!-- carrusel -->
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./imgs/cacm_pfi/cdc/cdc1.png" class="d-block w-100 img-fluid" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./imgs/cacm_microscopy_images/eritrocitos1.png" class="d-block w-100 img-fluid" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./imgs/cacm_pfi/Captura de pantalla de 2023-08-07 16-18-09.png" class="d-block w-100 img-fluid" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!-- carrusel -->
-    <main>
-        <article>
-            <h2>Applied Research in Academic, Industrial, and Governmental Contexts</h2>
-            <hr>
-            <p> Imaging Sciences Laboratory - Universidad Nacional del Sur and CONICET - San Andrés 800 - (8000) Bahía Blanca - ARGENTINA</p>
-            
-            <p>The Imaging Sciences Laboratory pioneers research, teaching and I+D+i activities in Argentina and Latin America in Image Processing, Computer Graphics, and Visualization. The current staff includes six full-time fellows of the National Research and Technology Council of Argentina (CONICET), four postdoctoral fellows, 12 Ph.D. candidates, and several national and international interns. The main activities are related to pure and applied research in image and video analysis, multifractality, complexity theory, and deep learning, with more than 120 SCI indexed papers, 20 doctoral dissertations, and breakthrough interaction with other research groups worldwide in medical imaging, biometrics, shape analysis, biomedical signal analysis, remote sensing, environmental monitoring, digital ergonomy, and many other topics. The group also actively participates in the development and deployment of innovative products for more than 20 companies and institutions, including governmental and third sector organizations, and has been awarded several national innovation prizes. Here we present some ongoing projects, with application in different contexts that illustrate the breadth of the Lab's activities<sup>1</sup>. 
-            </p>
-           
 
-        </article>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden fixed top-16 left-0 w-full h-screen bg-white z-40">
+            <div class="p-4 space-y-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-secondary font-medium" onclick="toggleMobileMenu()">Inicio</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-secondary font-medium" onclick="toggleMobileMenu()">Institucional</a>
+                <a href="#projects" class="block py-2 text-gray-700 hover:text-secondary font-medium" onclick="toggleMobileMenu()">Proyectos</a>
+                <a href="#team" class="block py-2 text-gray-700 hover:text-secondary font-medium" onclick="toggleMobileMenu()">Equipo</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-secondary font-medium" onclick="toggleMobileMenu()">Contacto</a>
+                <button class="w-full bg-secondary text-white px-4 py-3 rounded-lg hover:bg-primary transition-colors font-medium mt-4">
+                    <i class="fas fa-envelope mr-2"></i>Contactanos
+                </button>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://kimi-web-img.moonshot.cn/img/images.stockcake.com/38619eab36965f1141d90cd69209ce96501212bc.jpg" 
+                 alt="Laboratorio de investigación" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
         
-    </main>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Laboratorio de<br>
+                    <span class="text-gradient bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">Ciencias de las Imágenes</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
+                    Investigación de vanguardia en inteligencia artificial aplicada, 
+                    procesamiento de imágenes médicas y tecnología de última generación
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#projects" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-eye mr-2"></i>Descubrí Proyectos
+                    </a>
+                    <a href="#contact" class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary transition-all transform hover:scale-105 shadow-lg border-2 border-white/30">
+                        <i class="fas fa-handshake mr-2"></i>Colaborar con Nosotros
+                    </a>
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2023 Imaging Sciences Laboratory: <br> Applied Research in Academic, Industrial, and Governmental Contexts.<br> All right reserved.</p>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Sobre el Laboratorio de Ciencias de las Imagenes</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Somos un centro de investigación dedicado al desarrollo de tecnologías innovadoras 
+                    en el campo de las ciencias de las imágenes y la inteligencia artificial
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Investigación</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Desarrollamos algoritmos de vanguardia en procesamiento de imágenes médicas, 
+                        visión por computadora y aprendizaje profundo.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-success to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-flask text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Innovación</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Creamos soluciones tecnológicas que transforman la manera en que se analizan 
+                        y procesan las imágenes en diversos campos científicos y tecnológicos.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-warning to-danger rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Colaboración</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Trabajamos en estrecha colaboración con instituciones académicas, 
+                        hospitales y empresas de tecnología.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="bg-gradient-to-r from-primary to-secondary p-8 rounded-2xl text-white">
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold mb-2">25+</div>
+                        <p class="text-white/90">Años de Experiencia</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">50+</div>
+                        <p class="text-white/90">Proyectos Completados</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">200+</div>
+                        <p class="text-white/90">Publicaciones</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">10+</div>
+                        <p class="text-white/90">Aliados Estratégicos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Nuestros Proyectos en la industria</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Descubrí los proyectos a terceros que hemos desarrollando
+                </p>
+            </div>
+
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="imgs\ecodoc.png" 
+                         alt="IA en Odontología" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-medium">IA Médica</span>
+                            <span class="px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">Activo</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Inteligencia Artificial en Odontología</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Desarrollo de algoritmos de IA para el diagnóstico temprano de patologías dentales 
+                            mediante análisis de imágenes radiográficas.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Ganador Fondo Semilla 2024</span>
+                            <button class="text-secondary hover:text-primary font-medium">
+                                Ver más <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="imgs\esperma.png" 
+                         alt="Procesamiento de Imágenes Médicas" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium">Imágenes Médicas</span>
+                            <span class="px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">Activo</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Procesamiento Avanzado de Imágenes Médicas</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            El proyecto investiga y aplica algoritmos de procesamiento de imágenes integrados con sistemas de agentes inteligentes para desarrollar un sistema experto que evalúe, categorice y seleccione espermatozoides según sus características morfológicas, mediante un análisis automatizado de muestras espermáticas y un sistema de diagnóstico de fertilidad.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">En colaboración con CIC</span>
+                            <button class="text-secondary hover:text-primary font-medium">
+                                Ver más <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <img src="imgs\analisis_alimentos.jpg" 
+                         alt="Visión por Computadora" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-warning/10 text-warning rounded-full text-sm font-medium">Visión por Computadora</span>
+                            <span class="px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">Activo</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Kit portátil para la detección de agroquímicos en alimentos</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Este proyecto busca diseñar, prototipar y validar un kit de análisis de bajo costo, rápido y portátil para detectar plaguicidas organofosforados en muestras de alimentos, evaluando su viabilidad comercial en mercados agroalimentarios como cereales y frutas para permitir un control eficiente de contaminantes en la cadena logística.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Proyecto CONICET</span>
+                            <button class="text-secondary hover:text-primary font-medium">
+                                Ver más <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 (initially hidden) -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover extra-project hidden">
+                    <img src="imgs\sia.png" 
+                         alt="Visión por Computadora" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-warning/10 text-warning rounded-full text-sm font-medium">Visión por Computadora</span>
+                            <span class="px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">Activo</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Plataforma de Control Remoto para Soporte Técnico</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Este proyecto busca desarrollar una herramienta de soporte técnico remoto que capture y transmita la pantalla del usuario al especialista, además de capturar y ejecutar eventos de mouse y teclado del experto en la computadora del usuario, resolviendo desafíos de seguridad, compresión de datos, adaptabilidad y robustez ante variaciones en la red.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">SIA - Sadosky</span>
+                            <button class="text-secondary hover:text-primary font-medium">
+                                Ver más <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 (initially hidden) -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover extra-project hidden">
+                    <img src="imgs\venc_coope.jpg" 
+                         alt="Visión por Computadora" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-warning/10 text-warning rounded-full text-sm font-medium">Visión por Computadora</span>
+                            <span class="px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">Activo</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Detección Inteligente de Fechas de Vencimiento en Supermercados</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Sistema avanzado que emplea visión por computadora y OCR personalizado para identificar y digitalizar automáticamente fechas de vencimiento en productos de supermercados, utilizando imágenes capturadas por dispositivos Android en depósitos, lo que optimiza la gestión de inventarios, reduce pérdidas por caducidad y mejora la eficiencia operativa.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Cooperativa Obrera - ICIC</span>
+                            <button class="text-secondary hover:text-primary font-medium">
+                                Ver más <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 (initially hidden) -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover extra-project hidden">
+                    <img src="imgs\conejos.png" 
+                         alt="Visión por Computadora" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-warning/10 text-warning rounded-full text-sm font-medium">Visión por Computadora</span>
+                            <span class="px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">Activo</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Monitoreo Inteligente de Población de Conejos Ibéricos con IA y Drones</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Proyecto desarrollado para ViewX en la región de Verdu, España. Utiliza un modelo de IA avanzado para detectar conejos ibéricos mediante cámaras térmicas en drones. Supera desafíos como el comportamiento nocturno de los animales y el ruido del dron. Permite estimar poblaciones y controlar plagas que afectan las cosechas, con georreferenciación precisa de las imágenes capturadas.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">ViewX</span>
+                            <button class="text-secondary hover:text-primary font-medium">
+                                Ver más <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 (initially hidden) -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover extra-project hidden">
+                    <img src="imgs\super-res.png" 
+                         alt="Visión por Computadora" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-warning/10 text-warning rounded-full text-sm font-medium">Visión por Computadora</span>
+                            <span class="px-3 py-1 bg-success/10 text-success rounded-full text-sm font-medium">Activo</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Mejora de Resolución en Imágenes Satelitales con IA</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Proyecto colaborativo entre Fundación Sadosky y Space Sur que entrena un modelo de IA con imágenes aéreas para aplicarlo en imágenes satelitales, logrando duplicar la resolución y mejorar la calidad de análisis geoespaciales.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">ViewX</span>
+                            <button class="text-secondary hover:text-primary font-medium">
+                                Ver más <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <button id="show-more-projects" class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary transition-all transform hover:scale-105 shadow-lg flex items-center justify-center mx-auto">
+                    Conoce sobre otros proyectos <i class="fas fa-chevron-down ml-2"></i>
+                </button>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#contact" class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary transition-all transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-lightbulb mr-2"></i>¿Tenés un proyecto en mente?
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Nuestro Equipo</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conocé a los investigadores y profesionales que hacen posible nuestras innovaciones
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <!-- FOTO DEL INVESTIGADOR -->
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="imgs\Miembros\Klaus.jpg" 
+                            alt="Dr. Claudio Delrieux" 
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dr. Claudio Delrieux</h3>
+                    <p class="text-secondary font-medium mb-3">Director del Laboratorio</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Especialista en procesamiento de imágenes e inteligencia artificial. 
+                        Más de 20 años de experiencia en investigación.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary">
+                            <i class="fab fa-linkedin text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <!-- FOTO DEL INVESTIGADOR -->
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="imgs\Miembros\Pancho.jpeg" 
+                            alt="Dr. Francisco Iaconis" 
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dr. Francisco Iaconis</h3>
+                    <p class="text-secondary font-medium mb-3">Becario posdoctoral</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Doctor en Física, responsable técnico de proyectos innovadores y consultor en investigación y desarrollo, especializado en análisis de datos, aprendizaje automático y aplicaciones de IA en neurociencias y procesamiento de imágenes.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary">
+                            <i class="fab fa-linkedin text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <!-- FOTO DEL INVESTIGADOR -->
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="imgs\Miembros\juan-bajo.jpeg" 
+                            alt="Juan Bajo" 
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Juan Bajo</h3>
+                    <p class="text-secondary font-medium mb-3">Ingeniero en Computación</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Investigador dedicado al desarrollo de software y algoritmos de visión. Contribuye en implementaciones de prácticas de proyectos.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <!-- FOTO DEL INVESTIGADOR -->
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="imgs\Miembros\Deb.jpeg" 
+                            alt="Debora Pollicelli" 
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dra. Débora Pollicelli</h3>
+                    <p class="text-secondary font-medium mb-3">Dra. en Ingeniería</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                         Especializada en investigación y desarrollo basados en IA, con enfoque en procesamiento de imágenes y datos aplicados a biología, salud y medio ambiente.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-secondary">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                
+
+               
+                <!-- Miembros extra (ocultos inicialmente) -->
+                <div class="col-span-full grid md:grid-cols-2 lg:grid-cols-4 gap-8 hidden" id="extra-team">
+                <!-- Miembro 5 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                    <img src="imgs/Miembros/Katherym.jpeg" alt="Miembro 5" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Ing. Katherym Ruíz</h3>
+                    <p class="text-secondary font-medium mb-3">Becaria Doctoral</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                    Especialista en procesamiento de imágenes médicas para la detección y prevención del cáncer de mama.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                    <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 6 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFfgVbBwC4chg/profile-displayphoto-crop_800_800/B4DZlpJrhbIEAI-/0/1758405774065?e=1769040000&v=beta&t=FgeEErx6eWlKTXbhuoLU1LkriRrsifTNyy1g6GEpGJQ" alt="Miembro 6" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Ing. Miguel Massiris</h3>
+                    <p class="text-secondary font-medium mb-3">Ing. Electrónico</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                    Experto en grafos de conocimiento, procesamiento de lenguaje natural y sistemas de recomendación. Actualmente desarrollando asistentes virtuales en clínicas neonatales y pediátricas, con el objetivo de facilitar el acceso a información médica y mejorar la toma de decisiones colaborativas.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                    <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 7 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQGdQqxniip39Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732322762096?e=1769040000&v=beta&t=OFvi_edcM5RANcxKuqB3ReiE6nt2CqNfvpgEVzUXD4Y" alt="Miembro 7" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dr. Steven Vargas</h3>
+                    <p class="text-secondary font-medium mb-3">Dr. en Ingeniería</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                    Experto en Aprendizaje Automático y Procesamiento de Datos e Imágenes. Experto en investigación y desarrollo tecnológico en Ciencia de Datos, Aprendizaje Automático, Visión por Computadora, Procesamiento de Imágenes, Nubes de Puntos y Sistemas de Adquisición de Datos.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                    <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-github text-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 8 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGbv9CnzOHpMA/profile-displayphoto-shrink_800_800/B4DZStq5ugHAAk-/0/1738080493261?e=1769040000&v=beta&t=vIfFtzdoYHc90RXCYCOTRWFbz-N90bx4Z0cUQVqSQOA" alt="Miembro 8" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Ing. Facundo Roffet</h3>
+                    <p class="text-secondary font-medium mb-3">Ing. Electrónico</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                    Especialista en deep learning para el descubrimiento de biomarcadores en enfermedades neurodegenerativas mediante datos de fMRI. Desarrollador de modelos de IA. Contribuye a diversos proyectos colaborativos en deep learning a través de colaboraciones académicas e industriales.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 9 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHgQiymSJRqaQ/profile-displayphoto-shrink_800_800/B4DZUju37bHAAc-/0/1740061245882?e=1769040000&v=beta&t=DDqyAg36OnuwxzwljkTsqnd941FtRPpsYapiBem40xo" alt="Miembro 9" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Ing. Ciro Régulo Martínez</h3>
+                    <p class="text-secondary font-medium mb-3">Ing. de Sonido</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                    Especialista en procesamiento digital de señales de audio e imagen, machine learning, acústica subacuática e imágenes satelitales, aplicando deep learning para análisis acústico y visual.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 10 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="https://media.licdn.com/dms/image/v2/C4E03AQEUXkTkcvae7A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1620959190842?e=1769040000&v=beta&t=HWTUO9l4Jmt7NY2C_2KIxbUBQCstLP3JeNay1y1MDPQ" alt="Miembro 10" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Ing. Alejandro Zambrano Zabaleta</h3>
+                    <p class="text-secondary font-medium mb-3">Ing. Electrónico</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                    Especialista desarrollo de hardware e inteligencia artificial. Experiencia en proyectos multidisciplinarios que incluyen programación en lenguajes como Python, C y C++, diseño de placas electrónicas, automatización de procesos, desarrollo de modelos de Machine Learning, y análisis y visualización de datos.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 11 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="https://media.licdn.com/dms/image/v2/C4E03AQHtOmoTEIelMQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1546523697879?e=1769040000&v=beta&t=YW0SvLwxT7z2FNZ6wAJ9AmjvYXzgDQs-DhZImFnCM3s" 
+                        alt="Miembro 11" 
+                        class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dra. Andrea Rey</h3>
+                    <p class="text-secondary font-medium mb-3">Dra. en Matemática</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                   Especialista en matemática aplicada y análisis de datos. Experiencia en modelado estadístico, teoría de la información, análisis de series temporales, y procesamiento de señales e imágenes, con aplicaciones en datos biomédicos, radar e interpretación de patrones complejos.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 12 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFvpKQyEob0NQ/profile-displayphoto-crop_800_800/B4DZkLN3aRGQAM-/0/1756829809181?e=1769040000&v=beta&t=R36i3u4N7hWp2PBusPAmO70HgjT7n4oLIWGpuXd2dRs" 
+                        alt="Miembro 12" 
+                        class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Lic. Marianela Pacheco</h3>
+                    <p class="text-secondary font-medium mb-3">Lic. en Musicoterapia</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                   Especialista en musicoterapia clínica y neurociencias aplicadas. Experiencia en intervenciones basadas en música, investigación en sincronización rítmica y análisis de movimiento y sonido, con aplicación de herramientas computacionales y enfoques interdisciplinarios para el estudio del comportamiento humano.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 13 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="imgs\Miembros\Guillermina.jpg" 
+                        alt="Miembro 13" 
+                        class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Ing. Guillermina Santecchia</h3>
+                    <p class="text-secondary font-medium mb-3">Ing. Agrimensora</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                    Especialista en geotecnologías, fotogrametría y teledetección. Experiencia en generación de ortomosaicos con drones, procesamiento digital de imágenes y uso de instrumental topográfico, aplicados a la producción y análisis cartográfico de alta precisión.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 14 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEYwsTLNx39DQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729204471852?e=1769040000&v=beta&t=h99X5WDouczJBuGhxFfoTGMQXlIaTY1rVCS_qWxC20Y" 
+                        alt="Miembro 14" 
+                        class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dr. Jose Pablo Navarro</h3>
+                    <p class="text-secondary font-medium mb-3">Dr. en Ingenieria</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                    Especialista en algoritmos computacionales y análisis fenotipo-genotipo. Experiencia en desarrollo de métodos eficientes aplicados a reconstrucción morfométrica 3D, medicina, ciencias forenses y arqueología computacional, integrando informática, ingeniería y biología humana.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 15 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHkFjnZWWU6DQ/profile-displayphoto-shrink_800_800/B4DZWjLHRJHIAg-/0/1742199355218?e=1769040000&v=beta&t=uQwwCOeOgxZIMCW_uBl7tJgfKSeKLn456eEhDhG37PA" 
+                        alt="Miembro 15" 
+                        class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-2">Dr. Dario Ceballos</h3>
+                    <p class="text-secondary font-medium mb-3">Dr. en Informatica</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                    Como doctor en informática con especialidad en visualización con inteligencia de datos apuesto a expandir la creatividad y el conocimiento a través de herramientas y lenguajes propios del ecosistema digital. Especialización en procesos basados en datos e implementación de iA.
+                    </p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-secondary"><i class="fas fa-envelope text-lg"></i></a>
+                    </div>
+                </div>
+
+                </div>
+
+                 <!-- Botón para ver más miembros -->
+                <div class="col-span-full mt-10 text-center">
+                <button id="show-more-team"
+                        class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary transition-all transform hover:scale-105 shadow-lg flex items-center justify-center mx-auto">
+                    Conocé al resto del equipo <i class="fas fa-chevron-down ml-2"></i>
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Aliados Estratégicos</h2>
+                <p class="text-lg text-gray-600">Instituciones que confían en nuestro trabajo</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                        <img src="imgs/socios/la_coope.jpeg" 
+                            alt="Logo coope" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">Cooperativa Obrera</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                         <img src="imgs/socios/conicet.jpg" 
+                            alt="Logo CONICET" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">CONICET</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                        <img src="imgs/socios/uns.jpeg" 
+                            alt="Logo UNS" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">UNS</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                        <img src="imgs/socios/icic.jpg" 
+                            alt="Logo ICIC" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">ICIC</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                        <img src="imgs/socios/sadosky.png" 
+                            alt="Logo Fundación Sadosky" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">Fundación Sadosky</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                        <img src="imgs/socios/spacesur.png" 
+                            alt="Logo SpaceSur" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">Space-Sur</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                        <img src="imgs/socios/logo-viewx.png" 
+                            alt="Logo ViewX" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">ViewX</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                        <img src="imgs/socios/diec.jpg" 
+                            alt="Logo DIEC" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">DIEC</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                        <img src="imgs/socios/CIC.png" 
+                            alt="Logo CIC" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">Comisión de Investigaciones Científicas</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+                    <div class="text-center">
+                        <img src="imgs/socios/logo_UNSJB.png" 
+                            alt="Logo UNSJB" 
+                            class="h-12 w-auto mx-auto mb-2 object-contain">
+                        <p class="text-sm font-medium text-gray-700">UNPSJB</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Contactanos</h2>
+                <p class="text-xl text-white/90 max-w-3xl mx-auto">
+                    ¿Querés colaborar con nosotros o conocer más sobre nuestros proyectos?
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold mb-1">Dirección</p>
+                                    <p class="text-white/80">Bahía Blanca, Buenos Aires, Argentina (CP8000)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold mb-1">Email</p>
+                                    <p class="text-white/80">lci.uns.cm@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold mb-1">Teléfono</p>
+                                    <p class="text-white/80">+54 9 291 427-9746</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div>
+                        <h4 class="text-xl font-bold mb-4">Seguinos en redes</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Envianos un mensaje</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Nombre completo</label>
+                            <input type="text" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:border-white text-white placeholder-white/70" placeholder="Tu nombre">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:border-white text-white placeholder-white/70" placeholder="tu@email.com">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Asunto</label>
+                            <select class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:border-white text-white">
+                                <option value="" class="text-gray-800">Seleccionar asunto</option>
+                                <option value="collaboration" class="text-gray-800">Colaboración</option>
+                                <option value="project" class="text-gray-800">Consulta sobre proyectos</option>
+                                <option value="team" class="text-gray-800">Unirse al equipo</option>
+                                <option value="other" class="text-gray-800">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Mensaje</label>
+                            <textarea rows="4" class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:border-white text-white placeholder-white/70" placeholder="Tu mensaje..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                            <i class="fas fa-microscope text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">ImagLabs</h3>
+                            <p class="text-sm text-white/70">Laboratorio de Ciencias</p>
+                        </div>
+                    </div>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Investigación de vanguardia en ciencias de las imágenes e inteligencia artificial aplicada.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="text-white/80 hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="#about" class="text-white/80 hover:text-white transition-colors">Institucional</a></li>
+                        <li><a href="#projects" class="text-white/80 hover:text-white transition-colors">Proyectos</a></li>
+                        <li><a href="#team" class="text-white/80 hover:text-white transition-colors">Equipo</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Proyectos</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">IA en Odontología</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Imágenes Médicas</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Visión por Computadora</a></li>
+                        <li><a href="#" class="text-white/80 hover:text-white transition-colors">Todos los proyectos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li>Bahía Blanca, Buenos Aires</li>
+                        <li>lci.uns.cm@gmail.com</li>
+                        <li>+54 9 291 427-9746</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white/60 text-sm">
+                    © 2025 Laboratorio de Ciencias de las Imágenes. Todos los derechos reservados.
+                </p>
+                <p class="text-white/60 text-sm mt-2 md:mt-0">
+                    Sitio web diseñado con ❤️ para ImagLabs
+                </p>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
