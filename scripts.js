@@ -92,7 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // ====== Cargar papers.csv (con autores tipo lista Python) ======
-fetch('dois_detectados_con_meta.csv')
+fetch('papers.csv')
+console.log('CSV cargado', papers.length, 'papers')
   .then(r => r.text())
   .then(text => {
     const lines = text.trim().split('\n').slice(1);
