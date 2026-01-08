@@ -96,7 +96,7 @@ fetch('papers.csv')
 
   .then(r => r.text())
   .then(text => {
-    console.log('CSV cargado', papers.length, 'papers')
+    console.log('CSV cargado', papers.length, 'papers');
     const lines = text.trim().split('\n').slice(1);
     const papers = lines.map(l => {
       const [archivo, doi, titulo, autores, url_drive] = l.match(/(".*?"|[^,]+)/g)
