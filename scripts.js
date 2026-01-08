@@ -91,65 +91,67 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// ====== Cargar papers.csv (con autores tipo lista Python) ======
-fetch('papers.csv')
-
-  .then(r => r.text())
-  .then(text => {
-    console.log('CSV cargado', papers.length, 'papers');
-    const lines = text.trim().split('\n').slice(1);
-    const papers = lines.map(l => {
-      const [archivo, doi, titulo, autores, url_drive] = l.match(/(".*?"|[^,]+)/g)
-                                               .map(s => s.replace(/^"|"$/g, '').trim());
-
-      // Convertimos la "lista de Python" a array real
-      const autoresArray = JSON.parse(autores.replace(/'/g, '"'));
-      const autoresStr   = autoresArray.join(', ');
-
-      return {
-        titulo: titulo || 'Sin título',
-        autores: autoresStr,          // texto para mostrar
-        autoresArray,                  // array para buscar
-        url: url_drive
-      };
-    });
-
-    // ===== Renderizado =====
-    const list = document.getElementById('paper-list');
+// ===== Papers Section: Tarjetas visuales + paginación + búsqueda =====
+fetch('papers.json')
+  .then(res => res.json())
+  .then(papers => {
+    const grid = document.getElementById('papers-grid');
     const search = document.getElementById('paper-search');
-    const loadMore = document.getElementById('load-more-papers');
-    let current = 0;
-    const step = 15;
+    const pagination = document.getElementById('papers-pagination');
+    const perPage = 5;
+    let currentPage = 1;
+    let filtered = papers;
 
-    function render(filter = '') {
-      list.innerHTML = '';
-      current = 0;
-      const filtered = papers.filter(p =>
-        p.titulo.toLowerCase().includes(filter) ||
-        p.autoresArray.some(a => a.toLowerCase().includes(filter))
-      );
+    function renderPage(page) {
+      grid.innerHTML = '';
+      const start = (page - 1) * perPage;
+      const slice = filtered.slice(start, start + perPage);
 
-      function slice() {
-        filtered.slice(current, current + step).forEach(p => {
-          const li = document.createElement('li');
-          li.className = 'bg-white p-4 rounded-xl shadow flex justify-between items-center';
-          li.innerHTML = `
-            <div>
-              <div class="font-semibold text-primary">${p.titulo}</div>
-              <div class="text-sm text-gray-500">${p.autores}</div>
-            </div>
-            <a href="${p.url}" target="_blank" rel="noopener" class="bg-secondary text-white px-3 py-1 rounded text-sm">⬇ PDF</a>
-          `;
-          list.appendChild(li);
-        });
-        current += step;
-        loadMore.style.display = current >= filtered.length ? 'none' : 'inline-block';
-      }
+      slice.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-2xl shadow-lg overflow-hidden card-hover';
+        card.innerHTML = `
+          <img src="${p.imagen}" alt="${p.titulo}" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-primary mb-2">${p.titulo}</h3>
+            <p class="text-sm text-gray-500 mb-2">${p.autores}</p>
+            <p class="text-gray-600 text-sm mb-4">${p.resumen}</p>
+            <a href="${p.url}" target="_blank" class="inline-block bg-secondary text-white px-4 py-2 rounded-lg hover:bg-primary transition">
+              <i class="fas fa-download mr-2"></i>Descargar PDF
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
 
-      slice();
-      loadMore.onclick = () => slice();
-      search.oninput = () => render(search.value.toLowerCase());
+      renderPagination();
     }
 
-    render();
+    function renderPagination() {
+      const total = Math.ceil(filtered.length / perPage);
+      pagination.innerHTML = '';
+
+      for (let i = 1; i <= total; i++) {
+        const btn = document.createElement('button');
+        btn.className = `px-4 py-2 rounded-lg mx-1 ${i === currentPage ? 'bg-primary text-white' : 'bg-white text-primary border'}`;
+        btn.textContent = i;
+        btn.onclick = () => {
+          currentPage = i;
+          renderPage(i);
+        };
+        pagination.appendChild(btn);
+      }
+    }
+
+    search.addEventListener('input', () => {
+      const q = search.value.toLowerCase();
+      filtered = papers.filter(p =>
+        p.titulo.toLowerCase().includes(q) ||
+        p.autores.toLowerCase().includes(q)
+      );
+      currentPage = 1;
+      renderPage(1);
+    });
+
+    renderPage(1);
   });

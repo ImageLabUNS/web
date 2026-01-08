@@ -381,25 +381,23 @@
 
 
     <!-- Papers Section -->
-    <section id="papers" class="py-20 bg-gray-50">
-        <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Publicaciones Cientificas</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Accedé a nuestra colección de papers científicos publicados por el laboratorio
+<section id="papers" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Publicaciones Científicas</h2>
+      <p class="text-xl text-gray-600">Explorá nuestros papers y descargalos en PDF</p>
+    </div>
 
-            <!-- Buscador -->
-            <input id="paper-search" type="text" placeholder="Buscar por título o autor" class="w-full px-4 py-3 rounded-xl border border-gray-300 mb-6">
+    <!-- Buscador -->
+    <input id="paper-search" type="text" placeholder="Buscar por título o autor" class="w-full max-w-2xl mx-auto block px-4 py-3 rounded-xl border border-gray-300 mb-8">
 
-            <!-- Lista de papers -->
-            <ul id="paper-list" class="space-y-3"></ul>
+    <!-- Grilla de papers -->
+    <div id="papers-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
 
-            <!-- Paginación -->
-            <div class="mt-6 text-center">
-            <button id="load-more-papers" class="bg-secondary text-white px-6 py-2 rounded-lg">Ver más</button>
-            <a href="papers/all_papers.zip" class="ml-4 bg-primary text-white px-6 py-2 rounded-lg">Descargar todo</a>
-            </div>
-        </div>
-    </section>
+    <!-- Paginación -->
+    <div id="papers-pagination" class="flex justify-center gap-2 mt-10"></div>
+  </div>
+</section>
 
 
 

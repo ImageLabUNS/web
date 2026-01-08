@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Deep learning and whole-brain networks for biomarker discovery",
+    "autores": "Roffet, F., Deco, G., Delrieux, C., Patow, G.",
+    "resumen": "Aplicación de redes neuronales para descubrir biomarcadores en imágenes cerebrales.",
+    "imagen": "imgs/papers/roffet2025.jpg",
+    "url": "https://drive.google.com/file/d/1aBcDeFgHiJkLmNoPqRsTuVwXyZ/view"
+  },
+  {
+    "titulo": "Large-Scale Coastal Marine Wildlife Monitoring with Aerial Imagery",
+    "autores": "Ascagorta, O., Pollicelli, M. D., Iaconis, F. R., et al.",
+    "resumen": "Uso de imágenes aéreas y IA para monitorear fauna marina en costas argentinas.",
+    "imagen": "imgs/papers/ascagorta2025.jpg",
+    "url": "https://drive.google.com/file/d/2bCdEfGhIjKlMnOpQrStUvWxYz/view"
+  },
+  {
+    "titulo": "Noise reduction using novel loss functions for bone analysis",
+    "autores": "Thomsen, F. S. L., Delrieux, C. A., Pisula, J. I., et al.",
+    "resumen": "Nueva función de pérdida para mejorar la calidad de imágenes médicas de hueso.",
+    "imagen": "imgs/papers/thomsen2020.jpg",
+    "url": "https://drive.google.com/file/d/3cDeFgHiJkLmNoPqRsTuVwXyZa/view"
+  },
+  {
+    "titulo": "Supervised learning for semantic segmentation of human spermatozoa",
+    "autores": "Revollo Sarmiento, N. V., Thomsen, F. S. L., Delrieux, C., et al.",
+    "resumen": "Segmentación semántica de espermatozoides usando aprendizaje supervisado.",
+    "imagen": "imgs/papers/revollo2020.jpg",
+    "url": "https://drive.google.com/file/d/4dEfGhIjKlMnOpQrStUvWxYzaB/view"
+  },
+  {
+    "titulo": "Automatic feature extraction for Iberian ceramics using CNNs",
+    "autores": "Cintas, C., Lucena, M., Fuertes, J. M., Delrieux, C., et al.",
+    "resumen": "Clasificación automática de cerámicas ibéricas mediante redes convolucionales.",
+    "imagen": "imgs/papers/cintas2020.jpg",
+    "url": "https://drive.google.com/file/d/5eFgHiJkLmNoPqRsTuVwXyZaBc/view"
+  },
+  {
+    "titulo": "Genetic ancestry influences body shape and obesity risk",
+    "autores": "Trujillo-Jiménez, M. A., Pérez, L. O., Paschetta, C., et al.",
+    "resumen": "Estudio de cómo la ascendencia genética afecta la morfología corporal.",
+    "imagen": "imgs/papers/trujillo2025.jpg",
+    "url": "https://drive.google.com/file/d/6fGhIjKlMnOpQrStUvWxYzaBcD/view"
+  }
+]
