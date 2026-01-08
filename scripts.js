@@ -89,3 +89,65 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+// ====== Cargar papers.csv (con autores tipo lista Python) ======
+fetch('dois_detectados_con_meta.csv')
+  .then(r => r.text())
+  .then(text => {
+    const lines = text.trim().split('\n').slice(1);
+    const papers = lines.map(l => {
+      const [archivo, doi, titulo, autores, url_drive] = l.match(/(".*?"|[^,]+)/g)
+                                               .map(s => s.replace(/^"|"$/g, '').trim());
+
+      // Convertimos la "lista de Python" a array real
+      const autoresArray = JSON.parse(autores.replace(/'/g, '"'));
+      const autoresStr   = autoresArray.join(', ');
+
+      return {
+        titulo: titulo || 'Sin título',
+        autores: autoresStr,          // texto para mostrar
+        autoresArray,                  // array para buscar
+        url: url_drive
+      };
+    });
+
+    // ===== Renderizado =====
+    const list = document.getElementById('paper-list');
+    const search = document.getElementById('paper-search');
+    const loadMore = document.getElementById('load-more-papers');
+    let current = 0;
+    const step = 15;
+
+    function render(filter = '') {
+      list.innerHTML = '';
+      current = 0;
+      const filtered = papers.filter(p =>
+        p.titulo.toLowerCase().includes(filter) ||
+        p.autoresArray.some(a => a.toLowerCase().includes(filter))
+      );
+
+      function slice() {
+        filtered.slice(current, current + step).forEach(p => {
+          const li = document.createElement('li');
+          li.className = 'bg-white p-4 rounded-xl shadow flex justify-between items-center';
+          li.innerHTML = `
+            <div>
+              <div class="font-semibold text-primary">${p.titulo}</div>
+              <div class="text-sm text-gray-500">${p.autores}</div>
+            </div>
+            <a href="${p.url}" target="_blank" rel="noopener" class="bg-secondary text-white px-3 py-1 rounded text-sm">⬇ PDF</a>
+          `;
+          list.appendChild(li);
+        });
+        current += step;
+        loadMore.style.display = current >= filtered.length ? 'none' : 'inline-block';
+      }
+
+      slice();
+      loadMore.onclick = () => slice();
+      search.oninput = () => render(search.value.toLowerCase());
+    }
+
+    render();
+  });
