@@ -98,7 +98,7 @@ fetch('papers.json')
     const grid = document.getElementById('papers-grid');
     const search = document.getElementById('paper-search');
     const pagination = document.getElementById('papers-pagination');
-    const perPage = 5;
+    const perPage = 3;
     let currentPage = 1;
     let filtered = papers;
 
