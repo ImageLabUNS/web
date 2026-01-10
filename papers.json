@@ -1,12 +1,5 @@
 [
   {
-    "titulo": NaN,
-    "autores": NaN,
-    "resumen": "Resumen: nan",
-    "imagen": "imgs/papers/SamplingGI0.jpg",
-    "url": "https://drive.google.com/uc?id=1A40Bjt4aLG_NVVmbHm_VHquomIQqSIli&export=download"
-  },
-  {
     "titulo": "ECG Signals Classification Using Overlapping Variables to Detect Atrial Fibrillation",
     "autores": "['Ziccardi, I. G.', 'Rey, A. A.', 'Legnani, W. E.']",
     "resumen": "Resumen: ECG Signals Classification Using Overlapping Variables to Detect Atrial Fibrillation",
@@ -21,8 +14,8 @@
     "url": "https://drive.google.com/uc?id=1QZ1F1yke2W0-8WTuR5VZHWJ_BzyOhi4A&export=download"
   },
   {
-    "titulo": NaN,
-    "autores": NaN,
+    "titulo": "NaN",
+    "autores": "NaN",
     "resumen": "Resumen: nan",
     "imagen": "imgs/papers/Ruspil_2025.jpg",
     "url": "https://drive.google.com/uc?id=18ATudnibO72GMW9JD-LMGu64sK0LyAAZ&export=download"
@@ -147,8 +140,8 @@
     "url": "https://drive.google.com/uc?id=1qE_YuRCgKd10qR6X5NNrFlJ5UgUdd_Ai&export=download"
   },
   {
-    "titulo": NaN,
-    "autores": NaN,
+    "titulo": "NaN",
+    "autores": "NaN",
     "resumen": "Resumen: nan",
     "imagen": "imgs/papers/Massiris_2021.jpg",
     "url": "https://drive.google.com/uc?id=1LyThvpCYzy3UvN8BFLaywFUjKOM4GCNN&export=download"
