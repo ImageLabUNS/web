@@ -13,19 +13,20 @@
     "imagen": "imgs/papers/Roffet_2022.jpg",
     "url": "https://drive.google.com/uc?id=1QZ1F1yke2W0-8WTuR5VZHWJ_BzyOhi4A&export=download"
   },
-  {
-    "titulo": "NaN",
-    "autores": "NaN",
-    "resumen": "Resumen: nan",
-    "imagen": "imgs/papers/Ruspil_2025.jpg",
-    "url": "https://drive.google.com/uc?id=18ATudnibO72GMW9JD-LMGu64sK0LyAAZ&export=download"
-  },
+  
   {
     "titulo": "Deep learning and whole-brain networks for biomarker discovery: modeling the dynamics of brain fluctuations in resting-state and cognitive tasks",
     "autores": "['Roffet, Facundo', 'Deco, Gustavo', 'Delrieux, Claudio', 'Patow, Gustavo']",
     "resumen": "Resumen: Deep learning and whole-brain networks for biomarker discovery: modeling the dynamics of brain fluctuations in resting-state and cognitive tasks",
     "imagen": "imgs/papers/Roffet_2025.jpg",
     "url": "https://drive.google.com/uc?id=1aljFwvjPKh6Qyv01p8EvEjepBvd3Wl1u&export=download"
+  },
+  {
+    "titulo": "NaN",
+    "autores": "NaN",
+    "resumen": "Resumen: nan",
+    "imagen": "imgs/papers/Ruspil_2025.jpg",
+    "url": "https://drive.google.com/uc?id=18ATudnibO72GMW9JD-LMGu64sK0LyAAZ&export=download"
   },
   {
     "titulo": "Large-Scale Coastal Marine Wildlife Monitoring with Aerial Imagery",
