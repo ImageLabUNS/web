@@ -13,7 +13,6 @@
     "imagen": "imgs/papers/Roffet_2022.png",
     "url": "https://drive.google.com/uc?id=1QZ1F1yke2W0-8WTuR5VZHWJ_BzyOhi4A&export=download"
   },
-  
   {
     "titulo": "Deep learning and whole-brain networks for biomarker discovery: modeling the dynamics of brain fluctuations in resting-state and cognitive tasks",
     "autores": "['Roffet, Facundo', 'Deco, Gustavo', 'Delrieux, Claudio', 'Patow, Gustavo']",
@@ -461,5 +460,271 @@
     "resumen": "Resumen: Asymptotic distribution of the statistical complexity under the multinomial law",
     "imagen": "imgs/papers/Rey_2025a.jpg",
     "url": "https://drive.google.com/uc?id=1uH1q21xu-yfvTVtNbxgC-BCI8nhyz2Ou&export=download"
+  },
+  {
+    "titulo": "Physically inspired technique for modeling wet absorbent materials",
+    "autores": "['Juan Miguel Bajo', 'Claudio Delrieux', 'Gustavo Patow']",
+    "resumen": "Resumen: Physically inspired technique for modeling wet absorbent materials",
+    "imagen": "imgs/papers/bajo_2020a_infographic.png",
+    "url": "https://drive.google.com/uc?id=1uzV2ACV_S9YYPt8boFgpFEu5mN3GFP0o&export=download"
+  },
+  {
+    "titulo": "Realistic Buoyancy Model for Real-Time Applications",
+    "autores": "['J. M. Bajo', 'G. Patow and C. A. Delrieux']",
+    "resumen": "Resumen: Realistic Buoyancy Model for Real-Time Applications",
+    "imagen": "imgs/papers/bajo_2020b_infographic.png",
+    "url": "https://drive.google.com/uc?id=14GDFEIGZUWXzsiPr01tUt1EFXf_Kp6IM&export=download"
+  },
+  {
+    "titulo": "A Comprehensive Method for Liquid-to-Solid Interactions",
+    "autores": "['Juan Miguel Bajo', 'Claudio Delrieux and Gustavo Patow']",
+    "resumen": "Resumen: A Comprehensive Method for Liquid-to-Solid Interactions",
+    "imagen": "imgs/papers/bajo_2022_infographic.png",
+    "url": "https://drive.google.com/uc?id=1RVLWvX63TPXY9A-S5YspgFB5SeEsy2su&export=download"
+  },
+  {
+    "titulo": "An Interactive Buoyancy Model for Procedural Animation and Rendering",
+    "autores": "['Juan Miguel Bajo', 'Gustavo Patow', 'and Claudio Delrieux']",
+    "resumen": "Resumen: An Interactive Buoyancy Model for Procedural Animation and Rendering",
+    "imagen": "imgs/papers/bajo_2023_infographic.png",
+    "url": "https://drive.google.com/uc?id=1JGclO7t0SDvSLObNW8x-H3jVWe-yiAzF&export=download"
+  },
+  {
+    "titulo": "Vinculación Universidad-Industria: Desarrollo de sistema de administración remota por la UNS, SIA Interactive y Fundación Sadosky",
+    "autores": "['Juan Bajo', 'Gonzalo Silveira', 'Bruno Pazos', 'Teo Vogel', 'and Claudio Delrieux']",
+    "resumen": "Resumen: Vinculación Universidad-Industria: Desarrollo de sistema de administración remota por la UNS, SIA Interactive y Fundación Sadosky",
+    "imagen": "imgs/papers/bajo_2025_infographic.png",
+    "url": "https://drive.google.com/uc?id=1UIJKo5cLZnnUsmNDHv3p2ZsTEzhcJGzN&export=download"
+  },
+  {
+    "titulo": "Computer Graphics-Driven 3D LiDAR Model for Autonomous Driving Systems",
+    "autores": "['Leandro E. Borgnino', 'Claudio A. Delrieux', 'Damian A. Morero', 'and Nicolas Salomón']",
+    "resumen": "Resumen: Computer Graphics-Driven 3D LiDAR Model for Autonomous Driving Systems",
+    "imagen": "imgs/papers/borgnino_2025_infographic.png",
+    "url": "https://drive.google.com/uc?id=1LDriIPkK6rTmeOmDrzQr8KHLdH6K9LEP&export=download"
+  },
+  {
+    "titulo": "VesselGPT: Autoregressive Modeling of Vascular Geometry",
+    "autores": "['Paula Feldman', 'Martin Sinnona', 'Claudio Delrieux', 'Viviana Siless', 'and Emmanuel Iarussi']",
+    "resumen": "Resumen: VesselGPT: Autoregressive Modeling of Vascular Geometry",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1Tw4ml166vdZONp9VqAIWcAGxm0_Z9iL5&export=download"
+  },
+  {
+    "titulo": "Recursive Variational Autoencoders for 3D Blood Vessel Generative Modeling",
+    "autores": "['Paula Feldman', 'Miguel Fainstein', 'Viviana Siless', 'Claudio Delrieux', 'and Emmanuel Iarussi']",
+    "resumen": "Resumen: Recursive Variational Autoencoders for 3D Blood Vessel Generative Modeling",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1mHJbyNjTBp03QfuIR6ckY5hgP6gZI4vz&export=download"
+  },
+  {
+    "titulo": "VesselVAE: Recursive Variational Autoencoders for 3D Blood Vessel Synthesis",
+    "autores": "['Paula Feldman', 'Miguel Fainstein', 'Viviana Siless', 'Claudio Delrieux', 'and Emmanuel Iarussi']",
+    "resumen": "Resumen: VesselVAE: Recursive Variational Autoencoders for 3D Blood Vessel Synthesis",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1ThJfU_ImuglPgSE4CyL06yyPly-qTw1F&export=download"
+  },
+  {
+    "titulo": "Information theoretic characterization of eye tracking signals with relation to cognitive tasks",
+    "autores": "['F. R. Iaconis', 'A. A. Jiménez Gandica', 'J. A. Del Punta', 'C. A. Delrieux', 'and G. Gasaneo']",
+    "resumen": "Resumen: Information theoretic characterization of eye tracking signals with relation to cognitive tasks",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1LnIZXLnElQMcS0Sa9UepYrBIsi8ipGtR&export=download"
+  },
+  {
+    "titulo": "Modelling the eye movements of dyslexic children during reading as a Continuous Time Random Walk",
+    "autores": "['F. R. Iaconis', 'M. Meo', 'J. A. Del Punta', 'and G. Gasaneo']",
+    "resumen": "Resumen: Modelling the eye movements of dyslexic children during reading as a Continuous Time Random Walk",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1Xca_0cvCMenrIUBUSEWBJ6Xoq5qBPkWU&export=download"
+  },
+  {
+    "titulo": "Ordinal pattern transition networks in eye tracking reading signals",
+    "autores": "['F. R. Iaconis', 'M. A. Trujillo Jiménez', 'G. Gasaneo', 'O. A. Rosso', 'and C. A. Delrieux']",
+    "resumen": "Resumen: Ordinal pattern transition networks in eye tracking reading signals",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1D3ffChNhCHsk0VzbEN2t6MLH8XKKLLvK&export=download"
+  },
+  {
+    "titulo": "Generative Modelling of 3D in-silico Spongiosa with Controllable Micro-Structural Parameters",
+    "autores": "['Emmanuel Iarussi', 'Felix Thomsen', 'and Claudio Delrieux']",
+    "resumen": "Resumen: Generative Modelling of 3D in-silico Spongiosa with Controllable Micro-Structural Parameters",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1yqih_jDpdIa3JoqedDxnWwgmTf3Jd6CA&export=download"
+  },
+  {
+    "titulo": "GEMA – An Automatic Segmentation Method for Real-Time Analysis of Mammalian Cell Growth in Microfluidic Devices",
+    "autores": "['Ramiro Isa-Jara', 'Camilo Pérez-Sosa', 'Erick Macote-Yparraguirre', 'Natalia Revollo', 'Betiana Lerner', 'Santiago Miriuka', 'Claudio Delrieux', 'Maximiliano Pérez', 'and Roland Mertelsmann']",
+    "resumen": "Resumen: GEMA – An Automatic Segmentation Method for Real-Time Analysis of Mammalian Cell Growth in Microfluidic Devices",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=12l8iU47hc2n--QeRJooYKOqDbuNawEVi&export=download"
+  },
+  {
+    "titulo": "Parametric study of thermal damage in the hyperthermia treatment by radiofrequency",
+    "autores": "['Jorge I. Lopez and Leonardo A. Bermeo']",
+    "resumen": "Resumen: Parametric study of thermal damage in the hyperthermia treatment by radiofrequency",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1xbhXn0x74VnFmb0615DxJX9CitjX-2Rj&export=download"
+  },
+  {
+    "titulo": "Estimating the Electrical Conductivity of Human Tissue in Radiofrequency Hyperthermia Therapy",
+    "autores": "['Jorge I. López-Pérez and Leonardo A. Bermeo Varón']",
+    "resumen": "Resumen: Estimating the Electrical Conductivity of Human Tissue in Radiofrequency Hyperthermia Therapy",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1ZOG0XqfjlStk7LpUCZIgXCEwSwDhHiI0&export=download"
+  },
+  {
+    "titulo": "Automated Diagnosis of Pediatric Pulmonary Auscultation Using Deep Neural Networks",
+    "autores": "['Jorge I. Lopez Perez', 'Damián L. Taire', 'and Claudio Delrieux']",
+    "resumen": "Resumen: Automated Diagnosis of Pediatric Pulmonary Auscultation Using Deep Neural Networks",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=11AVJwj9t0TMxCmV2AvWo4PAwV8QRtWWm&export=download"
+  },
+  {
+    "titulo": "Regression Models for Dense Bathymetry in Turbid Coastal Areas",
+    "autores": "['Steven Martinez Vargas', 'Claudio Delrieux', 'Alejandro Vitale', 'and Katy Lorena Blanco Monroy']",
+    "resumen": "Resumen: Regression Models for Dense Bathymetry in Turbid Coastal Areas",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1mhvkRtEZ3Fiw_KWeIiSeq0CmY_w7u3iG&export=download"
+  },
+  {
+    "titulo": "Dense Bathymetry in Turbid Coastal Zones Using Airborne Hyperspectral Images",
+    "autores": "['Steven Martinez Vargas', 'Claudio Delrieux', 'Katy L. Blanco', 'and Alejandro Vitale']",
+    "resumen": "Resumen: Dense Bathymetry in Turbid Coastal Zones Using Airborne Hyperspectral Images",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1n9979T98Ry-gBieLBsYuMRXTxqoDQC_F&export=download"
+  },
+  {
+    "titulo": "Remote Sensing of anomalies in Wheat Crops using Aerial Hyperspectral Images",
+    "autores": "['Steven Martinez Vargas', 'Claudio Delrieux', 'and Nelly Salomon']",
+    "resumen": "Resumen: Remote Sensing of anomalies in Wheat Crops using Aerial Hyperspectral Images",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1Fs1H5irS_VhZSfw3R5_oK9YVtKtlPLwy&export=download"
+  },
+  {
+    "titulo": "Monitoring multiple parameters in complex water scenarios using a low-cost open-source data acquisition platform",
+    "autores": "['Steven Martinez Vargas', 'Alejandro J. Vitale', 'Sibila A. Genchi', 'Simón F. Nogueira', 'Andrés H. Arias', 'Gerardo M.E. Perillo', 'Agustín Siben', 'Claudio A. Delrieux']",
+    "resumen": "Resumen: Monitoring multiple parameters in complex water scenarios using a low-cost open-source data acquisition platform",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=18RsZm6_4QktyNk3gEjU8k3Mfb8_0t2ah&export=download"
+  },
+  {
+    "titulo": "Refinado Pancromático: Una Estrategia para Incrementar la Resolución en Imágenes Satelitales Hiperespectrales",
+    "autores": "['Steven Martinez Vargas', 'Alejandro Vitale']",
+    "resumen": "Resumen: Refinado Pancromático: Una Estrategia para Incrementar la Resolución en Imágenes Satelitales Hiperespectrales",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=14IxG1xFZPMpWFVbxMlwiEpjcCEeXgHWB&export=download"
+  },
+  {
+    "titulo": "Shallow Bathymetry from Hyperspectral Imagery Using 1D-CNN: An Innovative Methodology for High Resolution Mapping",
+    "autores": "['Steven Martínez Vargas', 'Sibila A. Genchi', 'Alejandro J. Vitale', 'Claudio A. Delrieux']",
+    "resumen": "Resumen: Shallow Bathymetry from Hyperspectral Imagery Using 1D-CNN: An Innovative Methodology for High Resolution Mapping",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1ePJXOvg5rb0BGSnwXawhx0c-L2fE3Frv&export=download"
+  },
+  {
+    "titulo": "Vision-Based Ergonomic Risk Estimation: Deep-learning Strategies",
+    "autores": "['Manlio Massiris Fernández', 'Juan Bajo', 'Steven Martinez Vargas', 'J. Alvaro Fernández', 'Claudio Delrieux']",
+    "resumen": "Resumen: Vision-Based Ergonomic Risk Estimation: Deep-learning Strategies",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1xW0pSMqQPbYqna2dVgQq_v04wWTuBfm7&export=download"
+  },
+  {
+    "titulo": "Automated Personnel Digital Twinning in Industrial Workplaces",
+    "autores": "['M. Massiris Fernandez', 'C. Delrieux', 'J. Á. Fernández Muñoz']",
+    "resumen": "Resumen: Automated Personnel Digital Twinning in Industrial Workplaces",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=134K9kypUeTa7O3-Mo7hlTJEefn0IOzX0&export=download"
+  },
+  {
+    "titulo": "ErgoExplorer: Interactive Ergonomic Risk Assessment from Video Collections",
+    "autores": "['Manlio Massiris Fernandez', 'Sanjin Rados', 'Kresimir Matkovic', 'M. Eduard Gröller', 'Claudio Delrieux']",
+    "resumen": "Resumen: ErgoExplorer: Interactive Ergonomic Risk Assessment from Video Collections",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1CQiCAE7OM3G_u0mtoJYCo6GczPMcukxo&export=download"
+  },
+  {
+    "titulo": "Gender Recognition using 3D Human Body Scans",
+    "autores": "['Navarro Pablo', 'Pazos Bruno', 'Cintas Celia', 'Ramallo Virginia', 'Gonzalez-José Rolando', 'Delrieux Claudio']",
+    "resumen": "Resumen: Gender Recognition using 3D Human Body Scans",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1lL3KHNg7nplTbckHO55SuD_gWWaGDMYp&export=download"
+  },
+  {
+    "titulo": "Body shape: Implications in the study of obesity and related traits",
+    "autores": "['Pablo Navarro', 'Virginia Ramallo', 'Celia Cintas', 'Anahí Ruderman', 'Soledad de Azevedo', 'Carolina Paschetta', 'Orlando Pérez', 'Bruno Pazos', 'Claudio Delrieux', 'Rolando González-José']",
+    "resumen": "Resumen: Body shape: Implications in the study of obesity and related traits",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1I4XZbbW3yX3R-Up2DnaoPv2XclxP3esq&export=download"
+  },
+  {
+    "titulo": "SketchZooms: Deep multi-view descriptors for matching line drawings",
+    "autores": "['Pablo Navarro', 'José Ignacio Orlando', 'Claudio Delrieux', 'Emmanuel Iarussi']",
+    "resumen": "Resumen: SketchZooms: Deep multi-view descriptors for matching line drawings",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=15UnCG_2WG3swSkUSMbiVQc8ie9GHwS3w&export=download"
+  },
+  {
+    "titulo": "Learning feature representation of Iberian ceramics with automatic classification models",
+    "autores": "['Pablo Navarro', 'Celia Cintas', 'Manuel Lucena', 'José Manuel Fuertes', 'Claudio Delrieux', 'Manuel Molinos']",
+    "resumen": "Resumen: Learning feature representation of Iberian ceramics with automatic classification models",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1Pt0Xe9iandFcLbkJXWHrpOfw1N3ASAG4&export=download"
+  },
+  {
+    "titulo": "Reconstruction of Iberian ceramic potteries using generative adversarial networks",
+    "autores": "['Pablo Navarro', 'Celia Cintas', 'Manuel Lucena', 'José Manuel Fuertes', 'Rafael Segura', 'Claudio Delrieux', 'Rolando González-José']",
+    "resumen": "Resumen: Reconstruction of Iberian ceramic potteries using generative adversarial networks",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1_i39Ic3IcUjIIRY75V_CCHwv9L7WPS5v&export=download"
+  },
+  {
+    "titulo": "IberianVoxel: Automatic Completion of Iberian Ceramics for Cultural Heritage Studies",
+    "autores": "['Pablo Navarro', 'Celia Cintas', 'Manuel Lucena', 'Jose Manuel Fuertes', 'Antonio Rueda', 'Rafael Segura', 'Carlos Ogayar-Anguita', 'Rolando Gonzalez-Jose', 'Claudio Delrieux']",
+    "resumen": "Resumen: IberianVoxel: Automatic Completion of Iberian Ceramics for Cultural Heritage Studies",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1nFQfxqzXydA79MyoKgT2pzJ1mT3pJ_Cs&export=download"
+  },
+  {
+    "titulo": "An Open-Source Clinical Case Dataset for Medical Image Classification and Multimodal AI Applications",
+    "autores": "['Mauro Nievas Offidani', 'Facundo Roffet', 'María Carolina González Galtier', 'Miguel Massiris', 'Claudio Delrieux']",
+    "resumen": "Resumen: An Open-Source Clinical Case Dataset for Medical Image Classification and Multimodal AI Applications",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1M_K9Q4zZzVMnrY0OGzoWcODQaR2bzCqA&export=download"
+  },
+  {
+    "titulo": "AI-Based Point Cloud Upsampling for Autonomous Driving Systems",
+    "autores": "['Nicolas Salomón', 'Claudio A. Delrieux', 'Damian A. Morero', 'Leandro E. Borgnino']",
+    "resumen": "Resumen: AI-Based Point Cloud Upsampling for Autonomous Driving Systems",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1sQW8o1tyCjSF_T29CjRdXur0xwjTXPtQ&export=download"
+  },
+  {
+    "titulo": "Machine Learning Point Cloud Enhancement for Self-Driving Systems",
+    "autores": "['Nicolás Salomón', 'Claudio A. Delrieux', 'Damián A. Morero', 'Leandro E. Borgnino']",
+    "resumen": "Resumen: Machine Learning Point Cloud Enhancement for Self-Driving Systems",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1sznYmXaro32j1lVcwfVeCBaGZRwckG0M&export=download"
+  },
+  {
+    "titulo": "Sampling from the GI0 Distribution",
+    "autores": "['Debora Chan', 'Andrea Rey', 'Juliana Gambini', 'Alejandro C. Frery']",
+    "resumen": "Resumen: Sampling from the GI0 Distribution",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1A40Bjt4aLG_NVVmbHm_VHquomIQqSIli&export=download"
+  },
+  {
+    "titulo": "BiGe-Onto: An Ontology-Based System for Managing Biodiversity and Biogeography Data",
+    "autores": "['Marcos Zárate', 'Germán Braun', 'Pablo Fillottrani', 'Claudio Delrieux', 'Mirtha Lewis']",
+    "resumen": "Resumen: BiGe-Onto: An Ontology-Based System for Managing Biodiversity and Biogeography Data",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1y5Ac6t-bAhEi9YLhZFRbu4YrHMKOxxMW&export=download"
+  },
+  {
+    "titulo": "Harmonizing Big Data with a Knowledge Graph: OceanGraph KG Uses Case",
+    "autores": "['Marcos Zárate', 'Carlos Buckle', 'Renato Mazzanti', 'Mirtha Lewis', 'Pablo Fillottrani', 'Claudio Delrieux']",
+    "resumen": "Resumen: Harmonizing Big Data with a Knowledge Graph: OceanGraph KG Uses Case",
+    "imagen": "imgs/logo.png",
+    "url": "https://drive.google.com/uc?id=1pY6Rrrk-dmtEqxN4J_vYBn-QnIUY5tIS&export=download"
   }
 ]
