@@ -65,7 +65,7 @@ document.querySelector('form')?.addEventListener('submit', function (e) {
 
   // Agregar correos extra en copia (CC)
   // REEMPLAZAR con los correos reales
-  formData.append('_cc', 'franciscoriaconis@duck.com');
+  formData.append('_cc', 'franciscoriaconis@duck.com', 'cad@uns.edu.ar');
   formData.append('_template', 'table'); // Formato de tabla limpio
   formData.append('_captcha', 'false'); // Ya lo validamos nosotros
 
