@@ -103,8 +103,7 @@
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
-            <img src="https://kimi-web-img.moonshot.cn/img/images.stockcake.com/38619eab36965f1141d90cd69209ce96501212bc.jpg"
-                alt="Laboratorio de investigación" class="w-full h-full object-cover">
+            <img src="imgs/hero_new.png" alt="Laboratorio de investigación" class="w-full h-full object-cover">
             <div class="absolute inset-0 hero-gradient"></div>
         </div>
 
@@ -117,8 +116,9 @@
                         de las Imágenes</span>
                 </h1>
                 <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-                    Investigación de vanguardia en inteligencia artificial aplicada,
-                    procesamiento de imágenes médicas y tecnología de última generación
+                    <!-- MENSAJE EN EL HERO SECTION -->
+                    <!--Investigación en inteligencia articial aplicada, procesamiento de imágenes y visión computacional.-->
+                    Ciencia e industria impulsada por inteligencia artificial
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a href="#projects"
@@ -143,50 +143,62 @@
     <section id="about" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Sobre el Laboratorio de Ciencias de las
-                    Imagenes</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4">Sobre nosotros</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Somos un centro de investigación dedicado al desarrollo de tecnologías innovadoras
-                    en el campo de las ciencias de las imágenes y la inteligencia artificial
+
+                    Somos un centro de I+D dedicado a crear sistemas inteligentes para el análisis de datos e imágenes.
+                    <br>
+                    Con una extensa trayectoria en ciencia e industria, desarrollamos soluciones innovadoras en visión
+                    por
+                    computadora, ciencia de datos e inteligencia artificial, adaptadas a las necesidades de cada
+                    proyecto.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-brain text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">Investigación</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Desarrollamos algoritmos de vanguardia en procesamiento de imágenes médicas,
-                        visión por computadora y aprendizaje profundo.
-                    </p>
-                </div>
 
-                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+
+                <a href="#projects"
+                    class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center block transition-all">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-success to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-flask text-white text-2xl"></i>
                     </div>
+                    <!-- BOTÓN INNOVACIÓN -->
                     <h3 class="text-2xl font-bold text-primary mb-4">Innovación</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Creamos soluciones tecnológicas que transforman la manera en que se analizan
-                        y procesan las imágenes en diversos campos científicos y tecnológicos.
+                        Creamos soluciones tecnológicas a medida para optimizar procesos basandonos en procesamiento
+                        de imágenes e inteligencia artificial en diversos campos científicos y tecnológicos.
                     </p>
-                </div>
+                </a>
 
-                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                <a href="#papers"
+                    class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center block transition-all">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <!-- BOTÓN INVESTIGACIÓN -->
+                    <h3 class="text-2xl font-bold text-primary mb-4">Investigación</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        A través de un proceso permanente de investigación y perfeccionamiento,
+                        transferimos conocimiento del estado del arte a aplicaciones concretas en ciencia e industria.
+                    </p>
+                </a>
+
+                <a href="#partners"
+                    class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center block transition-all">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-warning to-danger rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-users text-white text-2xl"></i>
                     </div>
+                    <!-- BOTÓN COLABORACIÓN -->
                     <h3 class="text-2xl font-bold text-primary mb-4">Colaboración</h3>
                     <p class="text-gray-600 leading-relaxed">
                         Trabajamos en estrecha colaboración con instituciones académicas,
-                        hospitales y empresas de tecnología.
+                        industria y empresas de tecnología.
                     </p>
-                </div>
+                </a>
             </div>
 
             <!-- Stats -->
@@ -1136,7 +1148,7 @@
     </section>
 
     <!-- Partners Section -->
-    <section class="py-16 bg-white">
+    <section id="partners" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-primary mb-4">Aliados Estratégicos</h2>
