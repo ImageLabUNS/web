@@ -180,17 +180,68 @@ fetch('papers.json')
     function renderPagination() {
       const total = Math.ceil(filtered.length / perPage);
       pagination.innerHTML = '';
+      if (total <= 1) return;
 
-      for (let i = 1; i <= total; i++) {
+      const createBtn = (content, page, active = false, disabled = false) => {
         const btn = document.createElement('button');
-        btn.className = `px-4 py-2 rounded-lg mx-1 ${i === currentPage ? 'bg-primary text-white' : 'bg-white text-primary border'}`;
-        btn.textContent = i;
-        btn.onclick = () => {
-          currentPage = i;
-          renderPage(i);
-        };
-        pagination.appendChild(btn);
+        btn.className = `px-3 py-2 sm:px-4 sm:py-2 rounded-lg mx-1 transition-all ${active ? 'bg-primary text-white shadow-md' : 'bg-white text-primary border border-gray-200 hover:bg-gray-50'
+          } ${disabled ? 'opacity-30 cursor-not-allowed' : 'hover:scale-105'}`;
+        btn.innerHTML = content;
+        if (!disabled) {
+          btn.onclick = () => {
+            currentPage = page;
+            renderPage(page);
+            // Scroll suave hacia arriba de la sección al cambiar de página
+            document.getElementById('papers').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          };
+        }
+        return btn;
+      };
+
+      // Botón Anterior
+      pagination.appendChild(createBtn('<i class="fas fa-chevron-left"></i>', currentPage - 1, false, currentPage === 1));
+
+      // Lógica de páginas mostradas
+      let pages = [];
+      const delta = 1; // Páginas a mostrar alrededor de la actual
+
+      if (total <= 7) {
+        for (let i = 1; i <= total; i++) pages.push(i);
+      } else {
+        pages.push(1); // Siempre mostrar la primera
+
+        if (currentPage > delta + 3) {
+          pages.push('...');
+        }
+
+        const start = Math.max(2, currentPage - delta);
+        const end = Math.min(total - 1, currentPage + delta);
+
+        // Ajustar para mostrar siempre un bloque de 3 si es posible
+        for (let i = start; i <= end; i++) {
+          if (!pages.includes(i)) pages.push(i);
+        }
+
+        if (currentPage < total - (delta + 2)) {
+          pages.push('...');
+        }
+
+        if (!pages.includes(total)) pages.push(total); // Siempre mostrar la última
       }
+
+      pages.forEach(p => {
+        if (p === '...') {
+          const span = document.createElement('span');
+          span.className = 'px-2 py-2 text-gray-400 font-bold';
+          span.textContent = '...';
+          pagination.appendChild(span);
+        } else {
+          pagination.appendChild(createBtn(p, p, p === currentPage));
+        }
+      });
+
+      // Botón Siguiente
+      pagination.appendChild(createBtn('<i class="fas fa-chevron-right"></i>', currentPage + 1, false, currentPage === total));
     }
 
     search.addEventListener('input', () => {
