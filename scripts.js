@@ -120,10 +120,57 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Botón "Conocé al resto del equipo"
+// Botón "Conocé al resto del equipo" y Carga Dinámica
 document.addEventListener('DOMContentLoaded', function () {
-  const toggleTeamBtn = document.getElementById('show-more-team');
+  const teamGridMain = document.getElementById('team-grid-main');
   const extraTeam = document.getElementById('extra-team');
+  const toggleTeamBtn = document.getElementById('show-more-team');
+
+  if (!teamGridMain) return;
+
+  fetch('miembros.json')
+    .then(res => res.json())
+    .then(members => {
+      // Ordenar por ID
+      members.sort((a, b) => a.id - b.id);
+
+      members.forEach((m, index) => {
+        const cardBody = document.createElement('div');
+        cardBody.className = 'bg-white p-6 rounded-2xl shadow-lg card-hover text-center';
+
+        // Lógica de Título: Si es Dr./Dra. usa posgrado, sino usa grado
+        const displayTitle = (m.titulo === 'Dr.' || m.titulo === 'Dra.') ? m.posgrado : m['Título de grado'];
+
+        // Lógica de Redes Sociales: Solo si existen y no son null/NaN
+        let socialHtml = '<div class="flex justify-center gap-3">';
+        if (m.linkedin) socialHtml += `<a href="${m.linkedin}" target="_blank" class="text-gray-400 hover:text-secondary"><i class="fab fa-linkedin text-lg"></i></a>`;
+        if (m.github) socialHtml += `<a href="${m.github}" target="_blank" class="text-gray-400 hover:text-secondary"><i class="fab fa-github text-lg"></i></a>`;
+        if (m.orcid) socialHtml += `<a href="${m.orcid}" target="_blank" class="text-gray-400 hover:text-secondary"><i class="fab fa-orcid text-lg"></i></a>`;
+        socialHtml += '</div>';
+
+        cardBody.innerHTML = `
+          <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+            <img src="imgs/Miembros/${m.id}${m.extension}" alt="${m.titulo} ${m['Nombre Completo']}" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-1">${m.titulo} ${m['Nombre Completo']}</h3>
+          <p class="text-secondary font-medium mb-3">${displayTitle}</p>
+          <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+            ${m.descripción} 
+            <a href="mailto:${m.Mail.replace(/\n/g, ',')}" class="block mt-2 text-primary font-medium hover:underline break-all">
+              ${m.Mail.replace(/\n/g, '<br>')}
+            </a>
+          </p>
+          ${socialHtml}
+        `;
+
+        if (index < 4) {
+          teamGridMain.appendChild(cardBody);
+        } else {
+          extraTeam.appendChild(cardBody);
+        }
+      });
+    })
+    .catch(err => console.error('Error cargando el equipo:', err));
 
   if (toggleTeamBtn && extraTeam) {
     toggleTeamBtn.addEventListener('click', function () {
@@ -150,7 +197,15 @@ fetch('papers.json')
     const pagination = document.getElementById('papers-pagination');
     const perPage = 3;
     let currentPage = 1;
-    let filtered = papers;
+
+    // Listado base de papers válidos (sin NaN)
+    const allValidPapers = papers.filter(p =>
+      p.titulo !== 'NaN' &&
+      p.autores !== 'NaN' &&
+      !p.resumen.includes('nan')
+    );
+
+    let filtered = allValidPapers;
 
     function renderPage(page) {
       grid.innerHTML = '';
@@ -160,11 +215,15 @@ fetch('papers.json')
       slice.forEach(p => {
         const card = document.createElement('div');
         card.className = 'bg-white rounded-2xl shadow-lg overflow-hidden card-hover';
+
+        // Formatear autores: quitar corchetes y comillas
+        const autoresFormateados = p.autores.replace(/[\[\]']/g, '');
+
         card.innerHTML = `
           <img src="${p.imagen}" alt="${p.titulo}" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-lg font-bold text-primary mb-2">${p.titulo}</h3>
-            <p class="text-sm text-gray-500 mb-2">${p.autores}</p>
+            <p class="text-sm text-gray-500 mb-2">${autoresFormateados}</p>
             <p class="text-gray-600 text-sm mb-4">${p.resumen}</p>
             <a href="${p.url}" target="_blank" class="inline-block bg-secondary text-white px-4 py-2 rounded-lg hover:bg-primary transition">
               <i class="fas fa-download mr-2"></i>Descargar PDF
@@ -246,7 +305,7 @@ fetch('papers.json')
 
     search.addEventListener('input', () => {
       const q = search.value.toLowerCase();
-      filtered = papers.filter(p =>
+      filtered = allValidPapers.filter(p =>
         p.titulo.toLowerCase().includes(q) ||
         p.autores.toLowerCase().includes(q)
       );
