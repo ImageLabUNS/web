@@ -94,7 +94,7 @@
         "Nombre Completo": "Arturo Leonardo Morales",
         "Mail": "moralesleonardo.rw@gmail.com",
         "Título de grado": "Lic.en Sistemas ",
-        "posgrado": "Doctor en Ciencias de la Ingeniería (UNPSJB)",
+        "posgrado": "Doctor en Ciencias de la Ingeniería",
         "titulo": "Dr.",
         "descripción": "Investigador especializado en procesamiento de imágenes, visión por computadora y\n                            aplicaciones de machine learning en antropometría 3D y análisis morfológico humano. Su\n                            doctorado se centró en técnicas de reconstrucción 3D y análisis visual interactivo, con\n                            contribuciones en proyectos interdisciplinarios",
         "id": 8,
@@ -114,7 +114,7 @@
         "linkedin": null,
         "github": null,
         "orcid": "https://orcid.org/0000-0002-1134-6344",
-        "extension": ".png"
+        "extension": ".jpeg"
     },
     {
         "Nombre Completo": "Gisela Noelia Revollo Sarmiento",
@@ -382,7 +382,7 @@
         "Título de grado": "Lic. en Ciencias Geológicas ",
         "posgrado": "Doctor en Geología ",
         "titulo": "Lic.",
-        "descripción": "Pendiente",
+        "descripción": " Desarrollo de modelos de prospección para la detección de litio en salares y pegmatitas tipo LCT(Litio-Cesio- Tantalio) combinando geologia, sensado remoto e inteligencia artificial, enfocados en reducir costos y bajar la curva de riesgos en inversiones exploratorias",
         "id": 30,
         "linkedin": "https://www.linkedin.com/in/mar%C3%ADa-bel%C3%A9n-ruspil-99392680/",
         "github": null,
@@ -395,12 +395,12 @@
         "Título de grado": "Lic. en Matemática",
         "posgrado": "Doctor en Matemática",
         "titulo": "Lic.",
-        "descripción": "Pendiente",
+        "descripción": "Interpretación de Imágenes Satelitales utilizando Análisis no Estacionario y Teoría de la Información.",
         "id": 31,
         "linkedin": null,
         "github": null,
         "orcid": null,
-        "extension": ".png"
+        "extension": ".jpg"
     },
     {
         "Nombre Completo": "Natalia Gómez",
@@ -408,11 +408,11 @@
         "Título de grado": "Lic. en Óptica y Contactología",
         "posgrado": "Doctor en Imágenes médicas",
         "titulo": "Lic.",
-        "descripción": "Pendiente",
+        "descripción": "Caracterización de las imágenes de Tomografía de Coherencia óptica en pacientes con esquizofrenia",
         "id": 32,
         "linkedin": null,
-        "github": null,
+        "github": "https://github.com/natalia-gomez01",
         "orcid": null,
-        "extension": ".png"
+        "extension": ".jpeg"
     }
 ]
