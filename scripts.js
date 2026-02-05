@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // ===== Papers Section: Tarjetas visuales + paginación + búsqueda =====
-fetch('papers.json')
+fetch('papers_2.json')
   .then(res => res.json())
   .then(papers => {
     const grid = document.getElementById('papers-grid');
@@ -216,8 +216,8 @@ fetch('papers.json')
         const card = document.createElement('div');
         card.className = 'bg-white rounded-2xl shadow-lg overflow-hidden card-hover';
 
-        // Formatear autores: quitar corchetes y comillas
-        const autoresFormateados = p.autores.replace(/[\[\]']/g, '');
+        // Formatear autores: manejar lista o string
+        const autoresFormateados = Array.isArray(p.autores) ? p.autores.join(', ') : p.autores;
 
         card.innerHTML = `
           <img src="${p.imagen}" alt="${p.titulo}" class="w-full h-48 object-cover">
@@ -305,10 +305,13 @@ fetch('papers.json')
 
     search.addEventListener('input', () => {
       const q = search.value.toLowerCase();
-      filtered = allValidPapers.filter(p =>
-        p.titulo.toLowerCase().includes(q) ||
-        p.autores.toLowerCase().includes(q)
-      );
+      filtered = allValidPapers.filter(p => {
+        const titleMatch = p.titulo.toLowerCase().includes(q);
+        const authorMatch = Array.isArray(p.autores)
+          ? p.autores.some(a => a.toLowerCase().includes(q))
+          : p.autores.toLowerCase().includes(q);
+        return titleMatch || authorMatch;
+      });
       currentPage = 1;
       renderPage(1);
     });
