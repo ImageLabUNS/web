@@ -20,7 +20,7 @@
       "Patow, G."
     ],
     "resumen": "Resumen: Assessing Multi-Site rs-fMRI-Based Connectomic Harmonization Using Information Theory",
-    "imagen": "imgs/papers/Roffet_2022.png",
+    "imagen": "imgs/papers/1.png",
     "url": "https://drive.google.com/uc?id=1QZ1F1yke2W0-8WTuR5VZHWJ_BzyOhi4A&export=download"
   },
   {
@@ -33,7 +33,7 @@
       "Patow, G."
     ],
     "resumen": "Resumen: Deep learning and whole-brain networks for biomarker discovery: modeling the dynamics of brain fluctuations in resting-state and cognitive tasks",
-    "imagen": "imgs/papers/Roffet_2025.png",
+    "imagen": "imgs/papers/5.png",
     "url": "https://drive.google.com/uc?id=1aljFwvjPKh6Qyv01p8EvEjepBvd3Wl1u&export=download"
   },
   {
@@ -111,6 +111,50 @@
   },
   {
     "id": 10,
+    "titulo": "Integrating Deep Learning Into Genotoxicity Biomarker Detection For Avian Erythrocytes: A Case Study In A Hemispheric Seabird",
+    "autores": [
+      "Frixione, M. G.",
+      "Roffet, F.",
+      "Adami, M. A.",
+      "Bertellotti, M.",
+      "D’Amico, V. L.",
+      "Delrieux, C.",
+      "Pollicelli, D."
+    ],
+    "resumen": "Resumen: Integrating Deep Learning into Genotoxicity Biomarker Detection for Avian Erythrocytes: A Case Study in a Hemispheric Seabird",
+    "imagen": "imgs/papers/2.png",
+    "url": "https://drive.google.com/uc?id=1t02zfWxasPKYy0ytcGLebD08n5tSPqUX&export=download"
+  },
+  {
+    "id": 11,
+    "titulo": "The Multiplex Classification Framework: Optimizing Multi-Label Classifiers Through Problem Transformation, Ontology Engineering, And Model Ensembling",
+    "autores": [
+      "Nievas Offidani, M. A.",
+      "Roffet, F.",
+      "Delrieux, C. A.",
+      "González Galtier, M. C.",
+      "Zarate, M. D."
+    ],
+    "resumen": "Resumen: The Multiplex Classification Framework: Optimizing Multi-Label Classifiers Through Problem Transformation, Ontology Engineering, and Model Ensembling",
+    "imagen": "imgs/papers/3.png",
+    "url": "https://drive.google.com/uc?id=1Z2csflZBDmbL6fXCdylkzCJvyOcGgx-6&export=download"
+  },
+  {
+    "id": 12,
+    "titulo": "An Open-Source Clinical Case Dataset For Medical Image Classification And Multimodal Ai Applications",
+    "autores": [
+      "Offidani, M. N.",
+      "Roffet, F.",
+      "Galtier, M. C. G.",
+      "Massiris, M.",
+      "Delrieux, C."
+    ],
+    "resumen": "Resumen: An Open-Source Clinical Case Dataset for Medical Image Classification and Multimodal AI Applications",
+    "imagen": "imgs/papers/4.png",
+    "url": "https://drive.google.com/uc?id=1M_K9Q4zZzVMnrY0OGzoWcODQaR2bzCqA&export=download"
+  },
+  {
+    "id": 13,
     "titulo": "NaN",
     "autores": "NaN",
     "resumen": "Resumen: nan",
@@ -118,7 +162,7 @@
     "url": "https://drive.google.com/uc?id=18ATudnibO72GMW9JD-LMGu64sK0LyAAZ&export=download"
   },
   {
-    "id": 11,
+    "id": 14,
     "titulo": "Large-Scale Coastal Marine Wildlife Monitoring With Aerial Imagery",
     "autores": [
       "Ascagorta, O.",
@@ -133,7 +177,7 @@
     "url": "https://drive.google.com/uc?id=1I1V4nYvjF3Fu_QYmtfAwqZT1-ed9O3Fo&export=download"
   },
   {
-    "id": 12,
+    "id": 15,
     "titulo": "AI-Based Point Cloud Upsampling For Autonomous Driving Systems",
     "autores": [
       "Salomón, N.",
@@ -146,7 +190,7 @@
     "url": "https://drive.google.com/uc?id=11Fy0Agz7HKXs6lLz0F7RrkmE9mCW8DzK&export=download"
   },
   {
-    "id": 13,
+    "id": 16,
     "titulo": "VesselGPT: Autoregressive Modeling Of Vascular Geometry",
     "autores": [
       "Feldman, P.",
@@ -160,20 +204,7 @@
     "url": "https://drive.google.com/uc?id=1713GF4VmVTqGGbam7t7gG-Pg-oIB-5gc&export=download"
   },
   {
-    "id": 14,
-    "titulo": "AI-Based Point Cloud Upsampling For Autonomous Driving Systems",
-    "autores": [
-      "Salomón, N.",
-      "Delrieux, C. A.",
-      "Morero, D. A.",
-      "Borgnino, L. E."
-    ],
-    "resumen": "Resumen: AI-Based Point Cloud Upsampling for Autonomous Driving Systems",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1OwpC3a9AgFQ63wWGsSF0dvuHeSNmCzZZ&export=download"
-  },
-  {
-    "id": 15,
+    "id": 17,
     "titulo": "Recursive Variational Autoencoders For 3d Blood Vessel Generative Modeling",
     "autores": [
       "Feldman, P.",
@@ -187,23 +218,7 @@
     "url": "https://drive.google.com/uc?id=1n-fCf62F0i4YxdrttQOIkXprIxD_AiAZ&export=download"
   },
   {
-    "id": 16,
-    "titulo": "Integrating Deep Learning Into Genotoxicity Biomarker Detection For Avian Erythrocytes: A Case Study In A Hemispheric Seabird",
-    "autores": [
-      "Frixione, M. G.",
-      "Roffet, F.",
-      "Adami, M. A.",
-      "Bertellotti, M.",
-      "D’Amico, V. L.",
-      "Delrieux, C.",
-      "Pollicelli, D."
-    ],
-    "resumen": "Resumen: Integrating Deep Learning into Genotoxicity Biomarker Detection for Avian Erythrocytes: A Case Study in a Hemispheric Seabird",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1t02zfWxasPKYy0ytcGLebD08n5tSPqUX&export=download"
-  },
-  {
-    "id": 17,
+    "id": 18,
     "titulo": "Change Detection In Point Clouds Using 3d Fractal Dimension",
     "autores": [
       "Casas-Rosa, J. C.",
@@ -220,7 +235,7 @@
     "url": "https://drive.google.com/uc?id=15G0nPEsmSPBwxntmOF_ESnoWcZGyVxzw&export=download"
   },
   {
-    "id": 18,
+    "id": 19,
     "titulo": "VesselVAE: Recursive Variational Autoencoders For 3d Blood Vessel Synthesis",
     "autores": [
       "Feldman, P.",
@@ -234,7 +249,7 @@
     "url": "https://drive.google.com/uc?id=1ZYLTwRMSV5_wE423lI_sw6y4QrfByhG1&export=download"
   },
   {
-    "id": 19,
+    "id": 20,
     "titulo": "ErgoExplorer: Interactive Ergonomic Risk Assessment From Video Collections",
     "autores": [
       "Fernandez, M. M.",
@@ -248,7 +263,7 @@
     "url": "https://drive.google.com/uc?id=1ni88yK1VbZeag_fdqAqCCrtWG2KGiGLG&export=download"
   },
   {
-    "id": 20,
+    "id": 21,
     "titulo": "Assessment Of Landsat-8 And Sentinel-2 Water Indices: A Case Study In The Southwest Of The Buenos Aires Province (Argentina)",
     "autores": [
       "Santecchia, G. S.",
@@ -262,7 +277,7 @@
     "url": "https://drive.google.com/uc?id=1XivvXOdC18dj1FaR7JeSZcmGt34gHOUN&export=download"
   },
   {
-    "id": 21,
+    "id": 22,
     "titulo": "Determination Of Grated Hard Cheese Adulteration By Digital Image Analysis And Multivariate Analysis",
     "autores": [
       "Visconti, L. G.",
@@ -276,7 +291,7 @@
     "url": "https://drive.google.com/uc?id=1ZsApzNPIZ72O65QsLgBxCytCM3mwndwa&export=download"
   },
   {
-    "id": 22,
+    "id": 23,
     "titulo": "GEMA—An Automatic Segmentation Method For Real-Time Analysis Of Mammalian Cell Growth In Microfluidic Devices",
     "autores": [
       "Isa-Jara, R.",
@@ -294,7 +309,7 @@
     "url": "https://drive.google.com/uc?id=1EOBZ3IfyXHbalucBJxlSHf1K73JjDCeB&export=download"
   },
   {
-    "id": 23,
+    "id": 24,
     "titulo": "Essential Oils Loaded On Polymeric Nanoparticles: Bioefficacy Against Economic And Medical Insect Pests And Risk Evaluation On Terrestrial And Aquatic Non-target Organisms",
     "autores": [
       "Yeguerman, C. A.",
@@ -310,7 +325,7 @@
     "url": "https://drive.google.com/uc?id=1my1fPTUMR8pFGqCxZCubWBt4FpQwoLYI&export=download"
   },
   {
-    "id": 24,
+    "id": 25,
     "titulo": "Body Volume And Mass Estimation Of Southern Elephant Seals Using <scp>3D</scp> Range Scanning And Neural Network Models",
     "autores": [
       "Eder, E. B.",
@@ -323,7 +338,7 @@
     "url": "https://drive.google.com/uc?id=1hsuUkFBVPujdD7Gt2jfQCZON42pOIUow&export=download"
   },
   {
-    "id": 25,
+    "id": 26,
     "titulo": "Joint Angle Estimation With Vibe: An Evaluation Using Virtual Avatars",
     "autores": [
       "Massiris Fernandez, M.",
@@ -336,7 +351,7 @@
     "url": "https://drive.google.com/uc?id=1oMDVABQnU7mAdBPTpPxkO5Dl2mJ6ODVX&export=download"
   },
   {
-    "id": 26,
+    "id": 27,
     "titulo": "Ergonomic Risk Assessment Based On Computer Vision And Machine Learning",
     "autores": [
       "MassirisFernández, M.",
@@ -347,14 +362,6 @@
     "resumen": "Resumen: Ergonomic risk assessment based on computer vision and machine learning",
     "imagen": "imgs/generic_paper.jpg",
     "url": "https://drive.google.com/uc?id=1qE_YuRCgKd10qR6X5NNrFlJ5UgUdd_Ai&export=download"
-  },
-  {
-    "id": 27,
-    "titulo": "NaN",
-    "autores": "NaN",
-    "resumen": "Resumen: nan",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1LyThvpCYzy3UvN8BFLaywFUjKOM4GCNN&export=download"
   },
   {
     "id": 28,
@@ -714,19 +721,6 @@
   },
   {
     "id": 51,
-    "titulo": "Computer Graphics-Driven 3d LiDAR Model For Autonomous Driving Systems",
-    "autores": [
-      "Borgnino, L. E.",
-      "Delrieux, C. A.",
-      "Salomón, N.",
-      "Morero, D. A."
-    ],
-    "resumen": "Resumen: Computer Graphics-Driven 3D LiDAR Model for Autonomous Driving Systems",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1zSdZS-75Iq7m4BMU2m1-KZpgbumK07_e&export=download"
-  },
-  {
-    "id": 52,
     "titulo": "Statistical Complexity Analysis Of Sleep Stages",
     "autores": [
       "Duarte, C. D.",
@@ -741,7 +735,7 @@
     "url": "https://drive.google.com/uc?id=1jJClqCOHbEBFALPWBogATDIlhiZE-c3A&export=download"
   },
   {
-    "id": 53,
+    "id": 52,
     "titulo": "A Permutation Entropy Method For Sleep Disorder Screening",
     "autores": [
       "Duarte, C. D.",
@@ -756,31 +750,7 @@
     "url": "https://drive.google.com/uc?id=1dYyD5AFrhFgDcI7EOCzAqX48YEGBYubF&export=download"
   },
   {
-    "id": 54,
-    "titulo": "The Multiplex Classification Framework: Optimizing Multi-Label Classifiers Through Problem Transformation, Ontology Engineering, And Model Ensembling",
-    "autores": [
-      "Nievas Offidani, M. A.",
-      "Roffet, F.",
-      "Delrieux, C. A.",
-      "González Galtier, M. C.",
-      "Zarate, M. D."
-    ],
-    "resumen": "Resumen: The Multiplex Classification Framework: Optimizing Multi-Label Classifiers Through Problem Transformation, Ontology Engineering, and Model Ensembling",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1Z2csflZBDmbL6fXCdylkzCJvyOcGgx-6&export=download"
-  },
-  {
-    "id": 55,
-    "titulo": "MultiCaRe: An Open-source Clinical Case Dataset For Medical Image Classification And Multimodal Ai Applications",
-    "autores": [
-      "Nievas Offidani, M."
-    ],
-    "resumen": "Resumen: MultiCaRe: An open-source clinical case dataset for medical image classification and multimodal AI applications",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=159dxLn0A5-N-Ii-uPf3uj1dX_R3gYUhu&export=download"
-  },
-  {
-    "id": 56,
+    "id": 53,
     "titulo": "Body2vec: 3d Point Cloud Reconstruction For Precise Anthropometry With Handheld Devices",
     "autores": [
       "Trujillo-Jiménez, M. A.",
@@ -800,7 +770,7 @@
     "url": "https://drive.google.com/uc?id=1PXdJAYtCSFwiIXRXkqo2LlInJ6vOyi4h&export=download"
   },
   {
-    "id": 57,
+    "id": 54,
     "titulo": "SatRed: New Classification Land Use/land Cover Model Based On Multi-spectral Satellite Images And Neural Networks Applied To A Semiarid Valley Of Patagonia",
     "autores": [
       "Trujillo-Jiménez, M. A.",
@@ -815,7 +785,7 @@
     "url": "https://drive.google.com/uc?id=1U70oojRlBlzIW1Ut6hlr2WDVDbhuFGY5&export=download"
   },
   {
-    "id": 58,
+    "id": 55,
     "titulo": "3DPatBody: 3d Dataset Of Human Bodies Of A Patagonian Population And Their Anthropometric Measurements",
     "autores": [
       "Trujillo-Jiménez, M. A.",
@@ -835,7 +805,7 @@
     "url": "https://drive.google.com/uc?id=1gDUlSpxhK7XmogE6E8X73y57Km0su5w9&export=download"
   },
   {
-    "id": 59,
+    "id": 56,
     "titulo": "Pareto Graphs",
     "autores": [
       "Rey, A. A."
@@ -845,7 +815,7 @@
     "url": "https://drive.google.com/uc?id=1Kmx6t8dGeU9oF31tZueqERsQX4BcRJy8&export=download"
   },
   {
-    "id": 60,
+    "id": 57,
     "titulo": "Mathematical And Informational Tools For Classifying Blood Glucose Signals - A Pilot Study",
     "autores": [
       "Amadio, A.",
@@ -860,7 +830,7 @@
     "url": "https://drive.google.com/uc?id=1xvQiNLrp-_qXaY7iXloAIHsC4QUUDCha&export=download"
   },
   {
-    "id": 61,
+    "id": 58,
     "titulo": "On The Geometric Pattern Transformation (gpt) Properties Of Unidimensional Signals",
     "autores": [
       "Bonini, C.",
@@ -875,7 +845,7 @@
     "url": "https://drive.google.com/uc?id=1uOP5gS161UdvNKE7fRMbO8xTnQkGc2j-&export=download"
   },
   {
-    "id": 62,
+    "id": 59,
     "titulo": "Detection Of Cardiac Arrhythmia Patterns In Ecg Through H × C Plane",
     "autores": [
       "Martínez Coq, P.",
@@ -889,7 +859,7 @@
     "url": "https://drive.google.com/uc?id=1NUVH6QE-AWMCjOLRRhSJuSvvgDVp5KJr&export=download"
   },
   {
-    "id": 63,
+    "id": 60,
     "titulo": "Statistical Properties Of The Entropy From Ordinal Patterns",
     "autores": [
       "Chagas, E. T. C.",
@@ -904,7 +874,7 @@
     "url": "https://drive.google.com/uc?id=1tcglkbl7HhG4ojCXiDy_4LwEFlhkZjcQ&export=download"
   },
   {
-    "id": 64,
+    "id": 61,
     "titulo": "Asymptotic Distribution Of Entropies And Fisher Information Measure Of Ordinal Patterns With Applications",
     "autores": [
       "Rey, A.",
@@ -917,7 +887,7 @@
     "url": "https://drive.google.com/uc?id=1iFoCAj1maXJypKuXebMimxa8eHjVGhbA&export=download"
   },
   {
-    "id": 65,
+    "id": 62,
     "titulo": "Asymptotic Distribution Of Certain Types Of Entropy Under The Multinomial Law",
     "autores": [
       "Rey, A. A.",
@@ -932,7 +902,7 @@
     "url": "https://drive.google.com/uc?id=1i6TYFMTXRMAbLZxLJF6W8O2QCq3B9WL1&export=download"
   },
   {
-    "id": 66,
+    "id": 63,
     "titulo": "The Asymptotic Distribution Of The Permutation Entropy",
     "autores": [
       "Rey, A. A.",
@@ -945,7 +915,7 @@
     "url": "https://drive.google.com/uc?id=1suVeZImfZiGYispA9fH6idq5y4EBIO7z&export=download"
   },
   {
-    "id": 67,
+    "id": 64,
     "titulo": "Entropy Estimators In Sar Image Classification",
     "autores": [
       "Cassetti, J.",
@@ -958,7 +928,7 @@
     "url": "https://drive.google.com/uc?id=1zF6DnSU6S__iGr2Hs5PH8Lqg4RkwfUef&export=download"
   },
   {
-    "id": 68,
+    "id": 65,
     "titulo": "An Alternative Computation Of The Entropy Of 1d Signals Based On Geometric Properties",
     "autores": [
       "Bonini, C.",
@@ -973,7 +943,7 @@
     "url": "https://drive.google.com/uc?id=125_NNcAAJT1C8tmQg-rLRTWnTbvtc5zY&export=download"
   },
   {
-    "id": 69,
+    "id": 66,
     "titulo": "Low-Cost Robust Estimation For The Single-Look $\\mathcal{G",
     "autores": [
       "Chan, D.",
@@ -986,7 +956,7 @@
     "url": "https://drive.google.com/uc?id=1mDMOD5u-b1_jLUr8SEM6ObTklTFvRY3a&export=download"
   },
   {
-    "id": 70,
+    "id": 67,
     "titulo": "Multithresholding Techniques In Sar Image Classification",
     "autores": [
       "Rey, A.",
@@ -997,7 +967,7 @@
     "url": "https://drive.google.com/uc?id=1Tc-P45GIQ5bMVR4naph16rdc4cg3MXxe&export=download"
   },
   {
-    "id": 71,
+    "id": 68,
     "titulo": "Automatic Delineation Of Water Bodies In Sar Images With A Novel Stochastic Distance Approach",
     "autores": [
       "Rey, A.",
@@ -1010,7 +980,7 @@
     "url": "https://drive.google.com/uc?id=1YqDfje-iEoad-AIAg6eZytq6yPj6E3nM&export=download"
   },
   {
-    "id": 72,
+    "id": 69,
     "titulo": "Asymptotic Distribution Of The Statistical Complexity Under The Multinomial Law",
     "autores": [
       "Rey, A.",
@@ -1022,49 +992,7 @@
     "url": "https://drive.google.com/uc?id=1uH1q21xu-yfvTVtNbxgC-BCI8nhyz2Ou&export=download"
   },
   {
-    "id": 73,
-    "titulo": "VesselGPT: Autoregressive Modeling Of Vascular Geometry",
-    "autores": [
-      "Feldman, P.",
-      "Sinnona, M.",
-      "Delrieux, C.",
-      "Siless, V.",
-      "Iarussi, a. E."
-    ],
-    "resumen": "Resumen: VesselGPT: Autoregressive Modeling of Vascular Geometry",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1Tw4ml166vdZONp9VqAIWcAGxm0_Z9iL5&export=download"
-  },
-  {
-    "id": 74,
-    "titulo": "Recursive Variational Autoencoders For 3d Blood Vessel Generative Modeling",
-    "autores": [
-      "Feldman, P.",
-      "Fainstein, M.",
-      "Siless, V.",
-      "Delrieux, C.",
-      "Iarussi, a. E."
-    ],
-    "resumen": "Resumen: Recursive Variational Autoencoders for 3D Blood Vessel Generative Modeling",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1mHJbyNjTBp03QfuIR6ckY5hgP6gZI4vz&export=download"
-  },
-  {
-    "id": 75,
-    "titulo": "VesselVAE: Recursive Variational Autoencoders For 3d Blood Vessel Synthesis",
-    "autores": [
-      "Feldman, P.",
-      "Fainstein, M.",
-      "Siless, V.",
-      "Delrieux, C.",
-      "Iarussi, a. E."
-    ],
-    "resumen": "Resumen: VesselVAE: Recursive Variational Autoencoders for 3D Blood Vessel Synthesis",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1ThJfU_ImuglPgSE4CyL06yyPly-qTw1F&export=download"
-  },
-  {
-    "id": 76,
+    "id": 70,
     "titulo": "Information Theoretic Characterization Of Eye Tracking Signals With Relation To Cognitive Tasks",
     "autores": [
       "Iaconis, F. R.",
@@ -1078,7 +1006,7 @@
     "url": "https://drive.google.com/uc?id=1LnIZXLnElQMcS0Sa9UepYrBIsi8ipGtR&export=download"
   },
   {
-    "id": 77,
+    "id": 71,
     "titulo": "Modelling The Eye Movements Of Dyslexic Children During Reading As A Continuous Time Random Walk",
     "autores": [
       "Iaconis, F. R.",
@@ -1091,7 +1019,7 @@
     "url": "https://drive.google.com/uc?id=1Xca_0cvCMenrIUBUSEWBJ6Xoq5qBPkWU&export=download"
   },
   {
-    "id": 78,
+    "id": 72,
     "titulo": "Ordinal Pattern Transition Networks In Eye Tracking Reading Signals",
     "autores": [
       "Iaconis, F. R.",
@@ -1105,19 +1033,7 @@
     "url": "https://drive.google.com/uc?id=1D3ffChNhCHsk0VzbEN2t6MLH8XKKLLvK&export=download"
   },
   {
-    "id": 79,
-    "titulo": "Generative Modelling Of 3d In-silico Spongiosa With Controllable Micro-Structural Parameters",
-    "autores": [
-      "Iarussi, E.",
-      "Thomsen, F.",
-      "Delrieux, a. C."
-    ],
-    "resumen": "Resumen: Generative Modelling of 3D in-silico Spongiosa with Controllable Micro-Structural Parameters",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1yqih_jDpdIa3JoqedDxnWwgmTf3Jd6CA&export=download"
-  },
-  {
-    "id": 80,
+    "id": 73,
     "titulo": "Gema – An Automatic Segmentation Method For Real-Time Analysis Of Mammalian Cell Growth In Microfluidic Devices",
     "autores": [
       "Isa-Jara, R.",
@@ -1135,7 +1051,7 @@
     "url": "https://drive.google.com/uc?id=12l8iU47hc2n--QeRJooYKOqDbuNawEVi&export=download"
   },
   {
-    "id": 81,
+    "id": 74,
     "titulo": "Parametric Study Of Thermal Damage In The Hyperthermia Treatment By Radiofrequency",
     "autores": [
       "Bermeo, J. I. L. a. L. A."
@@ -1145,7 +1061,7 @@
     "url": "https://drive.google.com/uc?id=1xbhXn0x74VnFmb0615DxJX9CitjX-2Rj&export=download"
   },
   {
-    "id": 82,
+    "id": 75,
     "titulo": "Estimating The Electrical Conductivity Of Human Tissue In Radiofrequency Hyperthermia Therapy",
     "autores": [
       "Varón, J. I. L. a. L. A. B."
@@ -1155,7 +1071,7 @@
     "url": "https://drive.google.com/uc?id=1ZOG0XqfjlStk7LpUCZIgXCEwSwDhHiI0&export=download"
   },
   {
-    "id": 83,
+    "id": 76,
     "titulo": "Automated Diagnosis Of Pediatric Pulmonary Auscultation Using Deep Neural Networks",
     "autores": [
       "Perez, J. I. L.",
@@ -1167,7 +1083,7 @@
     "url": "https://drive.google.com/uc?id=11AVJwj9t0TMxCmV2AvWo4PAwV8QRtWWm&export=download"
   },
   {
-    "id": 84,
+    "id": 77,
     "titulo": "Regression Models For Dense Bathymetry In Turbid Coastal Areas",
     "autores": [
       "Vargas, S. M.",
@@ -1180,7 +1096,7 @@
     "url": "https://drive.google.com/uc?id=1mhvkRtEZ3Fiw_KWeIiSeq0CmY_w7u3iG&export=download"
   },
   {
-    "id": 85,
+    "id": 78,
     "titulo": "Dense Bathymetry In Turbid Coastal Zones Using Airborne Hyperspectral Images",
     "autores": [
       "Vargas, S. M.",
@@ -1193,7 +1109,7 @@
     "url": "https://drive.google.com/uc?id=1n9979T98Ry-gBieLBsYuMRXTxqoDQC_F&export=download"
   },
   {
-    "id": 86,
+    "id": 79,
     "titulo": "Remote Sensing Of Anomalies In Wheat Crops Using Aerial Hyperspectral Images",
     "autores": [
       "Vargas, S. M.",
@@ -1205,7 +1121,7 @@
     "url": "https://drive.google.com/uc?id=1Fs1H5irS_VhZSfw3R5_oK9YVtKtlPLwy&export=download"
   },
   {
-    "id": 87,
+    "id": 80,
     "titulo": "Monitoring Multiple Parameters In Complex Water Scenarios Using A Low-cost Open-source Data Acquisition Platform",
     "autores": [
       "Vargas, S. M.",
@@ -1222,7 +1138,7 @@
     "url": "https://drive.google.com/uc?id=18RsZm6_4QktyNk3gEjU8k3Mfb8_0t2ah&export=download"
   },
   {
-    "id": 88,
+    "id": 81,
     "titulo": "Refinado Pancromático: Una Estrategia Para Incrementar La Resolución En Imágenes Satelitales Hiperespectrales",
     "autores": [
       "Vargas, S. M.",
@@ -1233,7 +1149,7 @@
     "url": "https://drive.google.com/uc?id=14IxG1xFZPMpWFVbxMlwiEpjcCEeXgHWB&export=download"
   },
   {
-    "id": 89,
+    "id": 82,
     "titulo": "Shallow Bathymetry From Hyperspectral Imagery Using 1d-cnn: An Innovative Methodology For High Resolution Mapping",
     "autores": [
       "Vargas, S. M.",
@@ -1246,47 +1162,7 @@
     "url": "https://drive.google.com/uc?id=1ePJXOvg5rb0BGSnwXawhx0c-L2fE3Frv&export=download"
   },
   {
-    "id": 90,
-    "titulo": "Vision-Based Ergonomic Risk Estimation: Deep-learning Strategies",
-    "autores": [
-      "Fernández, M. M.",
-      "Bajo, J.",
-      "Vargas, S. M.",
-      "Fernández, J. A.",
-      "Delrieux, C."
-    ],
-    "resumen": "Resumen: Vision-Based Ergonomic Risk Estimation: Deep-learning Strategies",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1xW0pSMqQPbYqna2dVgQq_v04wWTuBfm7&export=download"
-  },
-  {
-    "id": 91,
-    "titulo": "Automated Personnel Digital Twinning In Industrial Workplaces",
-    "autores": [
-      "Fernandez, M. M.",
-      "Delrieux, C.",
-      "Muñoz, J. Á. F."
-    ],
-    "resumen": "Resumen: Automated Personnel Digital Twinning in Industrial Workplaces",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=134K9kypUeTa7O3-Mo7hlTJEefn0IOzX0&export=download"
-  },
-  {
-    "id": 92,
-    "titulo": "ErgoExplorer: Interactive Ergonomic Risk Assessment From Video Collections",
-    "autores": [
-      "Fernandez, M. M.",
-      "Rados, S.",
-      "Matkovic, K.",
-      "Gröller, M. E.",
-      "Delrieux, C."
-    ],
-    "resumen": "Resumen: ErgoExplorer: Interactive Ergonomic Risk Assessment from Video Collections",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1CQiCAE7OM3G_u0mtoJYCo6GczPMcukxo&export=download"
-  },
-  {
-    "id": 93,
+    "id": 83,
     "titulo": "Gender Recognition Using 3d Human Body Scans",
     "autores": [
       "Pablo, N.",
@@ -1301,7 +1177,7 @@
     "url": "https://drive.google.com/uc?id=1lL3KHNg7nplTbckHO55SuD_gWWaGDMYp&export=download"
   },
   {
-    "id": 94,
+    "id": 84,
     "titulo": "Body Shape: Implications In The Study Of Obesity And Related Traits",
     "autores": [
       "Navarro, P.",
@@ -1320,7 +1196,7 @@
     "url": "https://drive.google.com/uc?id=1I4XZbbW3yX3R-Up2DnaoPv2XclxP3esq&export=download"
   },
   {
-    "id": 95,
+    "id": 85,
     "titulo": "SketchZooms: Deep Multi-view Descriptors For Matching Line Drawings",
     "autores": [
       "Navarro, P.",
@@ -1333,7 +1209,7 @@
     "url": "https://drive.google.com/uc?id=15UnCG_2WG3swSkUSMbiVQc8ie9GHwS3w&export=download"
   },
   {
-    "id": 96,
+    "id": 86,
     "titulo": "Learning Feature Representation Of Iberian Ceramics With Automatic Classification Models",
     "autores": [
       "Navarro, P.",
@@ -1348,7 +1224,7 @@
     "url": "https://drive.google.com/uc?id=1Pt0Xe9iandFcLbkJXWHrpOfw1N3ASAG4&export=download"
   },
   {
-    "id": 97,
+    "id": 87,
     "titulo": "Reconstruction Of Iberian Ceramic Potteries Using Generative Adversarial Networks",
     "autores": [
       "Navarro, P.",
@@ -1364,7 +1240,7 @@
     "url": "https://drive.google.com/uc?id=1_i39Ic3IcUjIIRY75V_CCHwv9L7WPS5v&export=download"
   },
   {
-    "id": 98,
+    "id": 88,
     "titulo": "IberianVoxel: Automatic Completion Of Iberian Ceramics For Cultural Heritage Studies",
     "autores": [
       "Navarro, P.",
@@ -1382,34 +1258,7 @@
     "url": "https://drive.google.com/uc?id=1nFQfxqzXydA79MyoKgT2pzJ1mT3pJ_Cs&export=download"
   },
   {
-    "id": 99,
-    "titulo": "An Open-Source Clinical Case Dataset For Medical Image Classification And Multimodal Ai Applications",
-    "autores": [
-      "Offidani, M. N.",
-      "Roffet, F.",
-      "Galtier, M. C. G.",
-      "Massiris, M.",
-      "Delrieux, C."
-    ],
-    "resumen": "Resumen: An Open-Source Clinical Case Dataset for Medical Image Classification and Multimodal AI Applications",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1M_K9Q4zZzVMnrY0OGzoWcODQaR2bzCqA&export=download"
-  },
-  {
-    "id": 100,
-    "titulo": "AI-Based Point Cloud Upsampling For Autonomous Driving Systems",
-    "autores": [
-      "Salomón, N.",
-      "Delrieux, C. A.",
-      "Morero, D. A.",
-      "Borgnino, L. E."
-    ],
-    "resumen": "Resumen: AI-Based Point Cloud Upsampling for Autonomous Driving Systems",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1sQW8o1tyCjSF_T29CjRdXur0xwjTXPtQ&export=download"
-  },
-  {
-    "id": 101,
+    "id": 89,
     "titulo": "Machine Learning Point Cloud Enhancement For Self-Driving Systems",
     "autores": [
       "Salomón, N.",
@@ -1422,7 +1271,7 @@
     "url": "https://drive.google.com/uc?id=1sznYmXaro32j1lVcwfVeCBaGZRwckG0M&export=download"
   },
   {
-    "id": 102,
+    "id": 90,
     "titulo": "Sampling From The Gi0 Distribution",
     "autores": [
       "Chan, D.",
@@ -1435,7 +1284,7 @@
     "url": "https://drive.google.com/uc?id=1A40Bjt4aLG_NVVmbHm_VHquomIQqSIli&export=download"
   },
   {
-    "id": 103,
+    "id": 91,
     "titulo": "BiGe-Onto: An Ontology-Based System For Managing Biodiversity And Biogeography Data",
     "autores": [
       "Zárate, M.",
@@ -1447,20 +1296,5 @@
     "resumen": "Resumen: BiGe-Onto: An Ontology-Based System for Managing Biodiversity and Biogeography Data",
     "imagen": "imgs/generic_paper.jpg",
     "url": "https://drive.google.com/uc?id=1y5Ac6t-bAhEi9YLhZFRbu4YrHMKOxxMW&export=download"
-  },
-  {
-    "id": 104,
-    "titulo": "Harmonizing Big Data With A Knowledge Graph: OceanGraph Kg Uses Case",
-    "autores": [
-      "Zárate, M.",
-      "Buckle, C.",
-      "Mazzanti, R.",
-      "Lewis, M.",
-      "Fillottrani, P.",
-      "Delrieux, C."
-    ],
-    "resumen": "Resumen: Harmonizing Big Data with a Knowledge Graph: OceanGraph KG Uses Case",
-    "imagen": "imgs/generic_paper.jpg",
-    "url": "https://drive.google.com/uc?id=1pY6Rrrk-dmtEqxN4J_vYBn-QnIUY5tIS&export=download"
   }
 ]
