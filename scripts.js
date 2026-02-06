@@ -3,8 +3,26 @@
 // Mobile Menu Toggle
 function toggleMobileMenu() {
   const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const body = document.body;
+
   if (mobileMenu) {
-    mobileMenu.classList.toggle('active');
+    const isActive = mobileMenu.classList.toggle('active');
+
+    // Toggle body scroll
+    if (isActive) {
+      body.classList.add('no-scroll');
+      if (menuIcon) {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark');
+      }
+    } else {
+      body.classList.remove('no-scroll');
+      if (menuIcon) {
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+      }
+    }
   }
 }
 
@@ -221,10 +239,10 @@ fetch('papers_2.json')
 
         card.innerHTML = `
           <img src="${p.imagen}" alt="${p.titulo}" class="w-full h-48 object-cover">
-          <div class="p-6">
+          <div class="p-6 flex flex-col items-center text-center">
             <h3 class="text-lg font-bold text-primary mb-2">${p.titulo}</h3>
             <p class="text-sm text-gray-500 mb-2">${autoresFormateados}</p>
-            <p class="text-gray-600 text-sm mb-4">${p.resumen}</p>
+            <!--<p class="text-gray-600 text-sm mb-4">${p.resumen}</p>-->
             <a href="${p.url}" target="_blank" class="inline-block bg-secondary text-white px-4 py-2 rounded-lg hover:bg-primary transition">
               <i class="fas fa-download mr-2"></i>Descargar PDF
             </a>
