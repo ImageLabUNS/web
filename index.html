@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio de Ciencias de las Imágenes</title>
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
     <meta name="description"
         content="Laboratorio de investigación en ciencias de las imágenes, inteligencia artificial y tecnología médica. Descubrí nuestros proyectos de vanguardia.">
 
@@ -41,9 +42,9 @@
 
 <body class="font-sans text-gray-800">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
+            <div class="flex items-center justify-between min-h-[4rem] py-2">
                 <!-- Logo -->
                 <div class="flex items-center gap-3">
                     <div
@@ -51,8 +52,9 @@
                         <img src="imgs/logo.png" alt="Logo" class="w-10 h-10 rounded-lg">
                     </div>
                     <div>
-                        <h1 class="text-lg font-bold text-primary">Laboratorio de Ciencias de las Imágenes</h1>
-                        <p class="text-xs text-gray-500">Universidad Nacional del Sur - ICIC, CONICET</p>
+                        <h1 class="text-base sm:text-lg font-bold text-primary leading-tight">Laboratorio de Ciencias de
+                            las Imágenes</h1>
+                        <p class="text-[10px] sm:text-xs text-gray-500">Universidad Nacional del Sur - ICIC, CONICET</p>
                     </div>
                 </div>
 
@@ -71,14 +73,15 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden p-2" onclick="toggleMobileMenu()">
-                    <i class="fas fa-bars text-gray-700 text-xl"></i>
+                <button class="md:hidden p-2 focus:outline-none" onclick="toggleMobileMenu()" aria-label="Menu">
+                    <i id="menu-icon" class="fas fa-bars text-gray-700 text-xl transition-transform duration-300"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu md:hidden fixed top-16 left-0 w-full h-screen bg-white z-40">
+        <div id="mobile-menu"
+            class="mobile-menu md:hidden fixed top-16 left-0 w-full h-[calc(100vh-4rem)] bg-white z-40 overflow-y-auto">
             <div class="p-4 space-y-4">
                 <a href="#home" class="block py-2 text-gray-700 hover:text-secondary font-medium"
                     onclick="toggleMobileMenu()">Inicio</a>
@@ -278,8 +281,6 @@
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-primary mb-3">Kit portátil para la detección de agroquímicos
                             en alimentos</h3>
-                        <h3 class="text-xl font-bold text-primary mb-3">Kit portátil para la detección de agroquímicos
-                            en alimentos</h3>
                         <p class="text-gray-600 mb-4 leading-relaxed">
                             Este proyecto busca diseñar, prototipar y validar un kit de análisis de bajo costo, rápido y
                             portátil para detectar plaguicidas organofosforados en muestras de alimentos, evaluando su
@@ -321,8 +322,6 @@
                     <img src="imgs\proyectos\venc_coope.jpg" alt="Visión por Computadora"
                         class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-3">Detección Inteligente de Fechas de Vencimiento
-                            en Supermercados</h3>
                         <h3 class="text-xl font-bold text-primary mb-3">Detección Inteligente de Fechas de Vencimiento
                             en Supermercados</h3>
                         <p class="text-gray-600 mb-4 leading-relaxed">
